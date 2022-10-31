@@ -1,1 +1,11 @@
 /* for ostvytsya-store css code */
+.left-col-menu{
+    width:280px;
+    height:1000px;
+    background-color: green;
+}
+
+.right-col-context{
+    height:1000px;
+    background-color: red;
+}
