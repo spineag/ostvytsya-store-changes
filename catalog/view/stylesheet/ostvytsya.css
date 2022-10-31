@@ -1,11 +1,17 @@
 /* for ostvytsya-store css code */
+.container_ost{
+    max-width:1440;
+    margin:0 auto;
+    min-height:1000px;
+}
+
 .left-col-menu{
     width:280px;
-    height:1000px;
+    min-height:1000px;
     background-color: green;
 }
 
 .right-col-context{
-    height:1000px;
+     min-height:1000px;
     background-color: red;
 }
