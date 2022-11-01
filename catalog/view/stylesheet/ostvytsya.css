@@ -48,6 +48,7 @@ h3 {font-size: 18px; }
   height:60px;
   background-color:white;
   display:fixed;
+  border-bottom: 1px solid #E4E4E4;
 }
 .main-content_ost{
   padding-top:60px;

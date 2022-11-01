@@ -16,6 +16,7 @@
   <link href="{{ bootstrap }}" type="text/css" rel="stylesheet" media="screen"/>
   <link href="{{ icons }}" type="text/css" rel="stylesheet"/>
   <link href="{{ stylesheet }}" type="text/css" rel="stylesheet"/>
+  <link href="https://spineag.github.io/ostvytsya-store-changes/catalog/view/stylesheet/ostvytsya.css?{{random(1,1000000)}}" type="text/css" rel="stylesheet"/>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/moment.min.js"></script>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js"></script>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/daterangepicker.js"></script>
@@ -24,7 +25,7 @@
   {% for style in styles %}
     <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>
   {% endfor %}
-  <link href="https://raw.githubusercontent.com/spineag/ostvytsya-store-changes/master/catalog/view/stylesheet/ostvytsya.css" type="text/css" rel="stylesheet"/> 
+   
   {% for script in scripts %}
     <script src="{{ script.href }}" type="text/javascript"></script>
   {% endfor %}
@@ -96,13 +97,57 @@
   {# {{ menu }} #}
 
   <div class="container_ost text-center">
-    <div class="row">
-      <div class="col left-col-menu">
+      <div class="left-col_menu">
+        <div id="logo">
+          {% if logo %}
+            <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid"/></a>
+          {% else %}
+            <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="w-auto right-col_content">
+        <div class="w-auto header_ost">
+          
+        </div>
+        <div class="w-auto main-content_ost">
+          <div class="content-section_ost">
+            <div>
+              <h3>Якісь товари 1</h3>
+              <div class="container text-center">
+               <div class="row">
+                <div class="col">
+                  Column 1
+                </div>
+                <div class="col">
+                  Column 2
+                </div>
+                <div class="col">
+                  Column 3
+                </div>
+                 <div class="col">
+                  Column 4
+                </div>
+               </div>
+               <div class="row">
+                <div class="col">
+                  Column 1
+                </div>
+                <div class="col">
+                  Column 2
+                </div>
+                <div class="col">
+                  Column 3
+                </div>
+                 <div class="col">
+                  Column 4
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div> {# main-content_ost #}
 
       </div>
-      <div class="col w-auto right-col-content">
-
-      </div>
-
-    </div>
   </div>
