@@ -34,12 +34,15 @@ h3 {font-size: 18px; }
   .left-side-cell {
     grid-area: left-side-cell;
   }
-  
+  .left-side{
+    background-color: white;
+  }
   .header-cell {
     grid-area: header-cell;
   }
   header{
     height:60px;
+    background-color: white;
     border-bottom: 1px solid #E4E4E4;
   }
   
@@ -52,5 +55,6 @@ h3 {font-size: 18px; }
   .footer-cell{
     grid-area: footer-cell;
     border-top: 1px solid #E4E4E4;
+    background-color: white;
   }
   
