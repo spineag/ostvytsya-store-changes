@@ -6,6 +6,7 @@ body {
   width: 100%;
   color: #222222;
   font-size: 18px;
+  background-color: black;
 }
 h3 {font-size: 18px; }
 
@@ -20,32 +21,36 @@ h3 {font-size: 18px; }
 .black_ost      { color:#222222 }
 
 .container_ost{
-    max-width:1440;
-    width:100%;
-    margin:0 auto;
-    min-height:1000px;
-    background-color: #ccc;
+  max-width:1440px;
+  width:100%;
+  margin:0 auto;
+  min-height:1000px;
+  background-color: #ccc;
 }
 
 .left-col_menu{
-    max-width:280px;
-    width:280px;
-    min-height:1000px;
-    background-color: green;
-    display:fixed;
+  max-width:280px;
+  width:280px;
+  min-height:1000px;
+  background-color: green;
+  display:fixed;
+  padding:0;
+  margin:0;
 }
 
 .right-col_content{
-    min-height:1000px;
-    background-color: red;
+  min-height:1000px;
+  background-color: red;
+  padding:0;
+  margin:0;
 }
 .header_ost{
-    height:60px;
-    background-color:white;
-    display:fixed;
+  height:60px;
+  background-color:white;
+  display:fixed;
 }
 .main-content_ost{
-    padding-top:60px;
-    background-color:blue;
+  padding-top:60px;
+  background-color:blue;
 }
 .content-section_ost{}
