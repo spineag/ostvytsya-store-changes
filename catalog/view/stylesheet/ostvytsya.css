@@ -22,18 +22,17 @@ h3 {font-size: 18px; }
 
 .container_ost{
   max-width:1440px;
-  width:100%;
   margin:0 auto;
   min-height:1000px;
   background-color: #ccc;
+  display: flex;
 }
 
 .left-col_menu{
   max-width:280px;
   width:280px;
   min-height:1000px;
-  background-color: green;
-  display:fixed;
+  background-color: white;
   padding:0;
   margin:0;
 }
