@@ -6,7 +6,7 @@ body {
   width: 100%;
   color: #222222;
   font-size: 18px;
-  background-color: black;
+  background-color: white;
 }
 h3 {font-size: 18px; }
 
@@ -20,37 +20,30 @@ h3 {font-size: 18px; }
 .black_ost      { color:#222222 }
 .black_ost      { color:#222222 }
 
-.container_ost{
-  max-width:1440px;
-  margin:0 auto;
-  min-height:1000px;
-  background-color: #ccc;
-  display: flex;
-}
-
-.left-col_menu{
-  max-width:280px;
-  width:280px;
-  min-height:1000px;
-  background-color: white;
-  padding:0;
-  margin:0;
-}
-
-.right-col_content{
-  min-height:1000px;
-  background-color: red;
-  padding:0;
-  margin:0;
-}
-.header_ost{
-  height:60px;
-  background-color:white;
-  display:fixed;
-  border-bottom: 1px solid #E4E4E4;
-}
-.main-content_ost{
-  padding-top:60px;
-  background-color:blue;
-}
-.content-section_ost{}
+.page {
+    max-width:1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 60px calc(100vh - 60px);  
+    grid-template-columns: 280px auto;
+    grid-template-areas: "nav header" 
+                         "nav content";
+  }
+  
+  .nav {
+    grid-area: nav;
+    background-color: aqua;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: grey;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: red;
+    overflow: auto;  
+    min-height: 1000px;                              
+  }
+  
