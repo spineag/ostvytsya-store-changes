@@ -32,17 +32,18 @@ h3 {font-size: 18px; }
   
   .left-side-cell {
     grid-area: left-side-cell;
-    background-color: aqua;
   }
   
   .header-cell {
     grid-area: header-cell;
-    background-color: grey;
+  }
+  header{
+    height:60px;
+    border-bottom: 1px solid #E4E4E4;
   }
   
   .content-cell {
     grid-area: content-cell;
-    background-color: red;
     overflow: auto;  
     min-height: 1000px;                              
   }
