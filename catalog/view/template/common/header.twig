@@ -97,11 +97,29 @@
   {# {{ menu }} #}
 
   <div class="page">
-    <div class="nav">Side nav</div>
-    <div class="header">Header</div>
-    <div class="content">
-      <div>
-        <h1>Якийсь товар №1</h1>
-      </>
+    <div class="left-side-cell">
+      <div class="left-side">
+        <div id="logo">
+          {% if logo %}
+            <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid"/></a>
+          {% else %}
+            <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
+        </div>
+
+        {# {{ left-menu }} #}
+
+      </div>
     </div>
+    <div class="header-cell">
+      <header>
+      
+      </header>
+    </div>
+    <div class="content-cell">
+      <section>
+        <div>
+          <h1>Якийсь товар №1</h1>
+        </div>
+      </section>
   </div>

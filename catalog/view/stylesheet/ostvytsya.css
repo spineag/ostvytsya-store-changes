@@ -30,17 +30,17 @@ h3 {font-size: 18px; }
                          "nav content";
   }
   
-  .nav {
+  .left-side-cell {
     grid-area: nav;
     background-color: aqua;
   }
   
-  .header {
+  .header-cell {
     grid-area: header;
     background-color: grey;
   }
   
-  .content {
+  .content-cell {
     grid-area: content;
     background-color: red;
     overflow: auto;  
