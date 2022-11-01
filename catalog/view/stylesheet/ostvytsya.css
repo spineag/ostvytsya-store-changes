@@ -24,7 +24,7 @@ h3 {font-size: 18px; }
     max-width:1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 60px calc(100vh - 60px) 100px;  
+    grid-template-rows: 60px auto 100px;  
     grid-template-columns: 280px auto;
     grid-template-areas: "left-side-cell header-cell" 
                          "left-side-cell content-cell"
@@ -41,17 +41,16 @@ h3 {font-size: 18px; }
   header{
     height:60px;
     border-bottom: 1px solid #E4E4E4;
-    background-color: red;
   }
   
   .content-cell {
     grid-area: content-cell;
     overflow: auto;  
-    min-height: 1000px;                              
+    min-height: 800px;                              
   }
 
   .footer-cell{
     grid-area: footer-cell;
-    background-color: blue;
+    border-top: 1px solid #E4E4E4;
   }
   

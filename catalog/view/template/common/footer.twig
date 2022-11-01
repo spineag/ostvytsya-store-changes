@@ -1,4 +1,4 @@
-</main>
+{# </main>
 <footer>
   <div class="container">
     <div class="row">
@@ -51,11 +51,20 @@ OpenCart is open source software and you are free to remove the powered by OpenC
 Please donate via PayPal to donate@opencart.com
 //-->
   </div>
-</footer>
+</footer> #}
+
+
+<div class="footer-cell">
+      {# {{ footer }} #}
+    </div>
+  </div>
+</main>
+
 {{ cookie }}
 <script src="{{ bootstrap }}" type="text/javascript"></script>
 {% for script in scripts %}
   <script src="{{ script.href }}" type="text/javascript"></script>
 {% endfor %}
   <script src="https://spineag.github.io/ostvytsya-store-changes/catalog/view/javascript/ostvytsya.js?{{random(1,1000000)}}" type="text/javascript"></script>
+
 </body></html>
