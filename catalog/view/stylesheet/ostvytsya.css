@@ -26,22 +26,22 @@ h3 {font-size: 18px; }
     display: grid;
     grid-template-rows: 60px calc(100vh - 60px);  
     grid-template-columns: 280px auto;
-    grid-template-areas: "nav header" 
-                         "nav content";
+    grid-template-areas: "left-side-cell header-cell" 
+                         "left-side-cell content-cell";
   }
   
   .left-side-cell {
-    grid-area: nav;
+    grid-area: left-side-cell;
     background-color: aqua;
   }
   
   .header-cell {
-    grid-area: header;
+    grid-area: header-cell;
     background-color: grey;
   }
   
   .content-cell {
-    grid-area: content;
+    grid-area: content-cell;
     background-color: red;
     overflow: auto;  
     min-height: 1000px;                              
