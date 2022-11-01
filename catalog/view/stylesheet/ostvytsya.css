@@ -24,7 +24,7 @@ h3 {font-size: 18px; }
     max-width:1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 60px calc(100vh - 60px);  
+    grid-template-rows: 60px calc(100vh - 60px) 100px;  
     grid-template-columns: 280px auto;
     grid-template-areas: "left-side-cell header-cell" 
                          "left-side-cell content-cell"
@@ -52,7 +52,6 @@ h3 {font-size: 18px; }
 
   .footer-cell{
     grid-area: footer-cell;
-    height:100px;
     background-color: blue;
   }
   
