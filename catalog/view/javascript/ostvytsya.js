@@ -10,3 +10,7 @@ function onWindowResize(){
 }
 window.onresize = onWindowResize;
 $( document ).ready( onWindowResize );
+
+$('.div_like-small-button').click(function(e){
+    $(this).find('a').click();
+})
