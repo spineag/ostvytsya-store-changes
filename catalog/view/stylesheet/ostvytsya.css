@@ -43,6 +43,14 @@ h3 {font-size: 18px; }
     background-color: white;
     border-bottom: 1px solid #E4E4E4;
   }
+  .div_like-small-button{
+    width:30px;
+    height:30px;
+  }
+  .div_like-small-button:hover{
+    border: 1px solid #999999;
+    border-radius:5px;
+  }
   
   .content-cell {
     grid-area: content-cell;
