@@ -16,3 +16,5 @@ $('.div_like-small-button').click(function(e){
     e.preventDefault();
     $(this).find('a').click();
 })
+
+// serach: https://freefrontend.com/css-search-boxes/
