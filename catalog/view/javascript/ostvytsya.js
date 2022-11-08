@@ -12,7 +12,7 @@ window.onresize = onWindowResize;
 $( document ).ready( onWindowResize );
 
 $('.div_like-small-button').click(function(e){
-    e.stopPropagnation();
+    e.stopPropagation();
     e.preventDefault();
     $(this).find('a').click();
 })
