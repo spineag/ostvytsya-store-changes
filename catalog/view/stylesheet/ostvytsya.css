@@ -116,7 +116,13 @@ h3 {font-size: 18px; }
     /* pointer-events: painted;   */
     transition: all 0.5s;
     border: none;
-  } 
+  }
+  .btn-search_ost a{
+    pointer-events: none;
+  }
+  .btn-search_ost.search_focus a{
+    pointer-events: default;
+  }
   /* .btn-search_ost:focus ~ .input-search_ost{
     width: 300px;
     border-bottom: 1px solid #E4E4E4;
