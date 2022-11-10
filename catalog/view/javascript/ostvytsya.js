@@ -15,6 +15,8 @@ $('.div_like-small-button').click(function(e){
     e.stopPropagation();
     e.preventDefault();
     let btn = $(this);
+    console.log(btn);
+    return;
     if (btn.hasClass('btn-search_ost')){
         if (btn.hasClass('search_focus')) 
             btn.find('a').click();
