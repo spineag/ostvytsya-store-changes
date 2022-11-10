@@ -14,6 +14,7 @@ h3 {font-size: 18px; }
 .dark-grey_ost  { color:#3A3A3A }
 .grey_ost       { color:#999999 }
 .light-grey_ost { color:#E4E4E4 }
+.light2-grey_ost{ color:#EbEbEb }
 .green3_ost     { color:#026251 }
 .green1_ost     { color:#74908B }
 .green2_ost     { color:#273A37 }
@@ -57,7 +58,7 @@ h3 {font-size: 18px; }
   }
   .div_like-small-button:hover{
     box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
-    background-color: #E4E4E4;
+    background-color: #EbEbEb;
   }
   /* #search{
     display: flex;
