@@ -59,12 +59,12 @@ h3 {font-size: 18px; }
     background-color: #EbEbEb;
   }
 
-  #search{
+  .search_cont{
     width: fit-content;
     height: fit-content;
     position: relative;
     margin-bottom: 0;
-    
+    pointer-events: none;
   }
   .input-search_ost{
     height: 30px;

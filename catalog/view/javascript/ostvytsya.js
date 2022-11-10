@@ -14,14 +14,14 @@ $( document ).ready( onWindowResize );
 $('.div_like-small-button').click(function(e){
     e.stopPropagation();
     e.preventDefault();
-    let btn = $(this);
-    console.log(btn);
-    return;
-    if (btn.hasClass('btn-search_ost')){
-        if (btn.hasClass('search_focus')) 
-            btn.find('a').click();
-        else btn.addClass('search_focus'); 
-    } else btn.find('a').click();
+    // $(this).find('a').click();
 })
+
+$('.search_top_cont').click(function(e){
+    let b = $(this).find('.btn-search_ost');
+    if (b.hasClass('search_focus')) 
+        $(this).find('search').click();
+    else b.addClass('search_focus')
+});
 
 // serach: https://freefrontend.com/css-search-boxes/
