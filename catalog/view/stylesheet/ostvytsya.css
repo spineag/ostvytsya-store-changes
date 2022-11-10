@@ -97,7 +97,10 @@ h3 {font-size: 18px; }
     width: 300px;
     border-bottom: 1px solid #E4E4E4;
   }  */
-  .btn-search_ost.search_focus ~ .input-search_ost{
+  .search_focus{
+    pointer-events: auto;
+  }
+  .search_focus .btn-search_ost ~ .input-search_ost{
     width: 300px;
     border-bottom: 1px solid #E4E4E4;
   }
