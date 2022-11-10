@@ -16,7 +16,7 @@ $('.div_like-small-button').click(function(e){
     e.preventDefault();
     let btn = $(this);
     if (btn.hasClass('btn-search_ost')){
-        if (btn.hasClass('btn-search_ost').hasClass('search_focus')) 
+        if (btn.hasClass('search_focus')) 
             btn.find('a').click();
         else btn.addClass('search_focus'); 
     } else btn.find('a').click();
