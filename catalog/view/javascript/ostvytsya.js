@@ -17,7 +17,7 @@ $('.search_top_cont').parent().click(function(e){
 
 $('#search').click(function(e){ // also commented "Search" part in common.js
     if ($(this).hasClass('search_focus')){
-        let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).find('button').attr('data-lang');
+        let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).find('button.btn-search_ost').attr('data-lang');
         let value = $(this).find('input[name=\'search\']').val();
         if (value) url += '&search=' + encodeURIComponent(value);
         location = url;

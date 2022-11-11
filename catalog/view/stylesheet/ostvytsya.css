@@ -92,6 +92,14 @@ h3 {font-size: 18px; }
     transition: all 0.25s;
     border: none;
   }
+  .x-search_ost{
+    outline: none;
+    /* position: absolute; */
+    /* right: 0px; */
+    background-color:transparent;
+    transition: all 0.25s;
+    border: none;
+  }
   /* .btn-search_ost:focus ~ .input-search_ost{
     width: 300px;
     border-bottom: 1px solid #E4E4E4;
