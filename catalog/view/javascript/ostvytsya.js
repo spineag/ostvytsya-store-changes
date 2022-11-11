@@ -11,8 +11,7 @@ function onWindowResize(){
 window.onresize = onWindowResize;0
 $( document ).ready( onWindowResize );
 
-
-$('#search button.btn-search_ost').click(function(e){ // also was commented "Search" part in common.js
+$('.box-search_ost button.btn-search_ost').click(function(e){ // also was commented "Search" part in common.js
     if ($(this).parent().hasClass('search_focus')){
         let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).attr('data-lang');
         let value = $(this).parent().find('input[name=\'search\']').val();
@@ -20,21 +19,25 @@ $('#search button.btn-search_ost').click(function(e){ // also was commented "Sea
         location = url;
     } else $(this).parent().addClass('search_focus');
 });
-$('#searсh button.x-search_ost').click(function(e){
+$('.box-search_ost button.x-search_ost').click(function(e){
+    console.log('x');
     console.log($(this).parent());
     $(this).parent().find('input[name=\'search\']').val('');
     $(this).parent().removeClass('search_focus');
 });
-$('#search input[name=\'search\']').on('keypress',function(e) {
+$('.box-search_ost input[name=\'search\']').on('keypress',function(e) {
     console.log(e.which);
     if(e.which == 13){
         let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).parent().find('button.btn-search_ost').attr('data-lang');
         let value = $(this).val();
         if (value) url += '&search=' + encodeURIComponent(value);
         location = url;
-    } else if (e.which == 27){
-        $(this).val('');
-        $(this).parent().removeClass('search_focus');
     }
 });
-
+$(document).on('keypress',function(e){
+    console.log(e.which);
+    if (e.which == 27 && $('.box-search_ost').hasClass('search_focus')){
+        $('.box-search_ost input[name=\'search\']').val('');
+        $('.box-search_ost').removeClass('search_focus');
+    }
+});

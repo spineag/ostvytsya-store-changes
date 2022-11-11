@@ -58,8 +58,11 @@ h3 {font-size: 18px; }
   .div_like-small-button:hover{
     background-color: #EbEbEb;
   }
+  .div_like-small-button:active, .div_like-small-button:focus{
+    outline: none;
+  }
 
-  #search{
+  .box-search_ost{
     width: fit-content;
     height: fit-content;
     position: relative;
