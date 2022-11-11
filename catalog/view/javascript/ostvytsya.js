@@ -26,7 +26,6 @@ $('.box-search_ost button.x-search_ost').click(function(e){
     $(this).parent().removeClass('search_focus');
 });
 $('.box-search_ost input[name=\'search\']').on('keypress',function(e) {
-    console.log(e.which);
     if(e.which == 13){
         let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).parent().find('button.btn-search_ost').attr('data-lang');
         let value = $(this).val();
@@ -34,9 +33,9 @@ $('.box-search_ost input[name=\'search\']').on('keypress',function(e) {
         location = url;
     }
 });
-$(document).on('keypress',function(e){
-    console.log(e.which);
-    if (e.which == 27 && $('.box-search_ost').hasClass('search_focus')){
+$(document).keyup(function(e){
+    console.log(e.key);
+    if (e.key === "Escape" && $('.box-search_ost').hasClass('search_focus')){
         $('.box-search_ost input[name=\'search\']').val('');
         $('.box-search_ost').removeClass('search_focus');
     }
