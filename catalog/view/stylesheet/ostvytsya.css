@@ -64,6 +64,7 @@ h3 {font-size: 18px; }
     height: fit-content;
     position: relative;
     margin-bottom: 0;
+    display: flex;
   }
   .input-search_ost{
     height: 30px;
@@ -94,11 +95,11 @@ h3 {font-size: 18px; }
   }
   .x-search_ost{
     outline: none;
-    /* position: absolute; */
-    /* right: 0px; */
     background-color:transparent;
     transition: all 0.25s;
     border: none;
+    opacity: 0;
+    display: none;
   }
   /* .btn-search_ost:focus ~ .input-search_ost{
     width: 300px;
@@ -107,6 +108,10 @@ h3 {font-size: 18px; }
   .search_focus .btn-search_ost ~ .input-search_ost{
     width: 300px;
     border-bottom: 1px solid #E4E4E4;
+  }
+  .search_focus .x-search_ost{
+    opacity: 1;
+    display: inherit;
   }
   .input-search_ost:focus{
     border-bottom:1px solid #999999;
