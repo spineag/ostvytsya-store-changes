@@ -1,0 +1,305 @@
+2022-10-05 10:52:17 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:52:17 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:53:19 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:53:19 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:53:36 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:53:36 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:54:37 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:54:37 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:55:25 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:55:25 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:56:47 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:56:47 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:57:41 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:57:41 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:59:56 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 10:59:56 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:00:46 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:00:46 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:02:43 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:02:43 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:25:23 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:25:23 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:33:01 - TypeError:  round(): Argument #2 ($precision) must be of type int, string given in /var/www/ostvytsya-store.pp.ua/system/library/cart/currency.php on line 39
+2022-10-05 11:37:34 - TypeError:  round(): Argument #2 ($precision) must be of type int, string given
+File: /var/www/ostvytsya-store.pp.ua/system/library/cart/currency.php
+Line: 39
+
+2022-10-05 11:37:41 - TypeError:  round(): Argument #2 ($precision) must be of type int, string given
+File: /var/www/ostvytsya-store.pp.ua/system/library/cart/currency.php
+Line: 39
+
+2022-10-05 11:38:05 - TypeError:  round(): Argument #2 ($precision) must be of type int, string given
+File: /var/www/ostvytsya-store.pp.ua/system/library/cart/currency.php
+Line: 39
+
+2022-10-05 11:38:59 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-05 11:38:59 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 17:43:59 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 17:43:59 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 17:44:11 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 17:44:11 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:34:12 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:34:12 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:36:00 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:36:00 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:39:36 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:39:36 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:45:55 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:45:55 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:46:00 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:46:00 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:46:13 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:46:13 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:47:18 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:47:18 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:48:33 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-13 18:48:33 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:35:43 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:35:43 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:04 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:04 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:27 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:27 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:30 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:30 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:34 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:37:34 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:38:29 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-14 15:38:29 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-18 17:29:08 - PHP Warning: rmdir(/var/www/ostvytsya-store.pp.ua/image/catalog/ale bowls/AB007): Directory not empty
+File: /var/www/ostvytsya-store.pp.ua/adminOst/controller/common/filemanager.php
+Line: 483
+
+2022-10-18 17:29:13 - PHP Warning: rmdir(/var/www/ostvytsya-store.pp.ua/image/catalog/ale bowls/AB007): Directory not empty
+File: /var/www/ostvytsya-store.pp.ua/adminOst/controller/common/filemanager.php
+Line: 483
+
+2022-10-18 17:29:23 - PHP Warning: rmdir(/var/www/ostvytsya-store.pp.ua/image/catalog/ale bowls/AB007): Directory not empty
+File: /var/www/ostvytsya-store.pp.ua/adminOst/controller/common/filemanager.php
+Line: 483
+
+2022-10-19 14:43:20 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:43:20 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:46:49 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:46:49 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:53:40 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:53:40 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:44 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:44 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:52 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:52 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:59 - PHP Warning: Undefined array key "UAH"
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-19 14:58:59 - DivisionByZeroError:  Division by zero
+File: /var/www/ostvytsya-store.pp.ua/extension/opencart/admin/controller/currency/ecb.php
+Line: 101
+
+2022-10-20 12:39:50 - PHP Warning: rmdir(/var/www/ostvytsya-store.pp.ua/image/catalog/jewerly/Pendant Amulet Battle-ax Bronze): Directory not empty
+File: /var/www/ostvytsya-store.pp.ua/adminOst/controller/common/filemanager.php
+Line: 483
+
+2022-10-20 12:42:46 - PHP Warning: rmdir(/var/www/ostvytsya-store.pp.ua/image/catalog/jewerly/Axe amulet Perun silver): Directory not empty
+File: /var/www/ostvytsya-store.pp.ua/adminOst/controller/common/filemanager.php
+Line: 483
+
