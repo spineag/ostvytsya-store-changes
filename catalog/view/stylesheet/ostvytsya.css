@@ -36,6 +36,7 @@ h3 {font-size: 18px; }
   .left-side{
     background-color: white;
   }
+   /*  -------------------     HEADER      ---------------------  */
   .header-cell {
     grid-area: header-cell;
   }
@@ -62,7 +63,7 @@ h3 {font-size: 18px; }
     outline: none;
     box-shadow: none;
   }
-
+ /*  -------------------     SEACRH      ---------------------  */
   .box-search_ost{
     width: fit-content;
     height: fit-content;
@@ -116,22 +117,27 @@ h3 {font-size: 18px; }
   .input-search_ost:focus{
     border-bottom:1px solid #999999;
   }
-
+ /*  -------------------     CONTENT      ---------------------  */
   .content-cell {
     grid-area: content-cell;
     overflow: auto;  
     min-height: 800px;                              
   }
+  
+  .grid-container_ost{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  /* .grid-cell_ost{
 
+  } */
+
+  /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
     grid-area: footer-cell;
     border-top: 1px solid #E4E4E4;
     background-color: white;
   }
+
+
   
-  .module-grid_ost{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr, 1fr;
-    gap: 30px;
-  }
