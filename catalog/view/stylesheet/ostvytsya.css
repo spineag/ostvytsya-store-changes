@@ -55,6 +55,7 @@ h3 {font-size: 18px; }
     justify-content: center;
     align-items: center;
     padding: 0;
+    color: #222222;
   }
   .div_like-small-button:hover{
     background-color: #EbEbEb;
@@ -63,7 +64,7 @@ h3 {font-size: 18px; }
     outline: none;
     box-shadow: none;
   }
- /*  -------------------     SEACRH      ---------------------  */
+ /*  -------------------     SEARCH      ---------------------  */
   .box-search_ost{
     width: fit-content;
     height: fit-content;
