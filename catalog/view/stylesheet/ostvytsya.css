@@ -45,6 +45,7 @@ h3 {font-size: 18px; }
     background-color: white;
     border-bottom: 1px solid #E4E4E4;
   }
+  .list-inline-item:not(:last-child){ margin-right: 30px;}
   .div_like-small-button{
     width:30px;
     height:30px;
@@ -136,6 +137,30 @@ h3 {font-size: 18px; }
   /* .grid-cell_ost{
 
   } */
+
+  .product-thumb_ost{
+    height: 350px;
+
+  }
+  .product-thumb_ost .image_part{
+    width:250px;
+    height:250px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .product-thumb_ost .title_part{
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .product-thumb_ost .bottom_part{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
