@@ -45,7 +45,7 @@ h3 {font-size: 18px; }
     background-color: white;
     border-bottom: 1px solid #E4E4E4;
   }
-  .list-inline-item:not(:last-child){ margin-right: 30px;}
+  .list-inline-item:not(:last-child){ margin-right: 20px;}
   .div_like-small-button{
     width:30px;
     height:30px;
