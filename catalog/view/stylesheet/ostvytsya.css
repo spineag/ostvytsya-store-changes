@@ -133,21 +133,23 @@ h3 {font-size: 18px; }
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
   }
   /* .grid-cell_ost{
 
   } */
 
   .product-thumb_ost{
-    height: 350px;
+    /* height: 350px; */
 
   }
   .product-thumb_ost .image_part{
-    width:250px;
-    height:250px;
+    background-color: #cccccc;
     margin: 0;
     padding: 0;
     border-radius: 10px;
+    overflow: hidden;
+    /* object-fit: cover; -> for <img>*/
   }
   .product-thumb_ost .title_part{
     margin-top: 10px;
