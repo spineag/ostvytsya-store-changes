@@ -3,10 +3,14 @@ namespace Opencart\Catalog\Controller\Extension\Opencart\Module;
 use \Opencart\System\Helper AS Helper;
 class Featured extends \Opencart\System\Engine\Controller {
 	public function index(array $setting): string {
-		$this->load->language('extension/opencart/module/featured');
+		// $this->load->language('extension/opencart/module/featured');
 
 		$this->load->model('catalog/product');
 		$this->load->model('tool/image');
+
+		$lang = $this->config->get('config_language');
+		if ($lang = 'uk-ua')     $_['heading_title'] = $setting['ua'];
+		elseif ($lang = 'en-gb') $_['heading_title'] = $setting['en'];
 
 		$data['products'] = [];
 
