@@ -145,9 +145,12 @@ h3 {font-size: 18px; }
 
   } */
 
+  /*  -------------------     PRODUCT      ---------------------  */
   .product-thumb_ost{
-    /* height: 350px; */
-
+    background-color: white;
+  }
+  .product-thumb_ost:hover{
+    background-color: #EbEbEb;
   }
   .product-thumb_ost .image_part{
     background-color: #cccccc;
@@ -175,6 +178,7 @@ h3 {font-size: 18px; }
     align-items: center;
     justify-content: space-between;
     color: #222222;
+    margin: 10px 0;
   }
   .product-thumb_ost .bottom_part_right{
     display: flex;
