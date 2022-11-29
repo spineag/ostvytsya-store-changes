@@ -152,10 +152,11 @@ h3 {font-size: 18px; }
     transition: all 0.25s;
   }
   .product-thumb_ost:hover{
-    box-shadow: 1px 1px 1px #eeeeee;
+    /* box-shadow: 1px 1px 1px #eeeeee; */
+    border-bottom: 1px solid #E4E4E4;
   }
   .product-thumb_ost:hover .image_part_inner{
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
   .product-thumb_ost .image_part{
     margin: 0;
