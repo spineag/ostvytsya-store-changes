@@ -9,8 +9,8 @@ class Featured extends \Opencart\System\Engine\Controller {
 		$this->load->model('tool/image');
 
 		$lang = $this->config->get('config_language');
-		if ($lang = 'uk-ua')     $_['heading_title'] = $setting['ua'];
-		elseif ($lang = 'en-gb') $_['heading_title'] = $setting['en'];
+		if ($lang = 'uk-ua')     $data['heading_title'] = $setting['ua'];
+		elseif ($lang = 'en-gb') $data['heading_title'] = $setting['en'];
 
 		$data['products'] = [];
 
