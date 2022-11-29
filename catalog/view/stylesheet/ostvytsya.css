@@ -59,7 +59,8 @@ h3 {font-size: 18px; }
     color: #222222;
   }
   .div_like-small-button:hover{
-    background-color: #EbEbEb;
+    background-color: #222222;
+    color: white;
   }
   .div_like-small-button:active, .div_like-small-button:focus{
     outline: none;
@@ -174,7 +175,7 @@ h3 {font-size: 18px; }
     display: flex;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button{
-    background: inherit;
+    background: white;
     border: none;
     margin: 0 5px;
     border-radius: 10px;
@@ -184,7 +185,9 @@ h3 {font-size: 18px; }
     width: 50px;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:hover{
-    background-color: #EbEbEb;
+    background-color: #222222;
+    color: white;
+    border: none;
   }
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
