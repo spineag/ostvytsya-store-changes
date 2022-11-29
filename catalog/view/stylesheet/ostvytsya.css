@@ -173,13 +173,16 @@ h3 {font-size: 18px; }
   .product-thumb_ost .bottom_part_right .div_like-small-button{
     background: inherit;
     border: none;
-    margin: 0 10px;
+    margin: 0 5px;
     border-radius: 5px;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
     border: 1px solid #222222;
+    width: 50px;
   }
-
+  .product-thumb_ost .bottom_part_right .div_like-small-button:hover{
+    background-color: #EbEbEb;
+  }
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
     grid-area: footer-cell;
