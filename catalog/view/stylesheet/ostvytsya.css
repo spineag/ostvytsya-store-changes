@@ -57,11 +57,16 @@ h3 {font-size: 18px; }
     align-items: center;
     padding: 0;
     color: #222222;
+    fill: #222222;
+    stroke: none;
   }
   .div_like-small-button:hover{
     background-color: #222222;
     color: white;
+    fill: white;
   }
+  .div_like-small-button .stroke_language_icon{ stroke:#222222; }
+  .div_like-small-button .stroke_language_icon:hover{ stroke:white; }
   .div_like-small-button:active, .div_like-small-button:focus{
     outline: none;
     box-shadow: none;
