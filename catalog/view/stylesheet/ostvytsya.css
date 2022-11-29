@@ -162,11 +162,22 @@ h3 {font-size: 18px; }
     width: 100%;
   }
   .product-thumb_ost .bottom_part{
-    position: relative;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .product-thumb_ost .bottom_part_right{
+    display: flex;
+  }
+  .product-thumb_ost .bottom_part_right .div_like-small-button{
+    background: inherit;
+    border: none;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
+    border: 1px solid #222222;
   }
 
   /*  -------------------     FOOTER      ---------------------  */
