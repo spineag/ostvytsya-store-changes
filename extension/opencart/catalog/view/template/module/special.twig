@@ -1,4 +1,5 @@
-<span class="module-heading_ost">{{ heading_title }}</span>
+<div class="module-heading_ost"><span> {{ heading_title }}</span></div>
+
 <div class="row{% if axis == 'horizontal' %}row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-{% endif %}">
   {% for product in products %}
     <div class="col">{{ product }}</div>
