@@ -24,7 +24,7 @@ h3 {font-size: 18px; }
     margin: 0 auto;
     display: grid;
     grid-template-rows: 60px auto 100px;  
-    grid-template-columns: 280px auto;
+    grid-template-columns: 250px auto;
     grid-template-areas: "left-side-cell header-cell" 
                          "left-side-cell content-cell"
                          "footer-cell footer-cell";
@@ -35,7 +35,6 @@ h3 {font-size: 18px; }
   }
   .left-side{
     background-color: white;
-    padding-right:30px;
   }
   .left-side #logo{
     text-align: left;
