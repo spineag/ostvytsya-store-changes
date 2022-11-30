@@ -80,7 +80,8 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
-		$data['menu'] = $this->load->controller('common/menu');
+		// $data['menu'] = $this->load->controller('common/menu');
+		$data['menu'] = $this->load->controller('common/column_left');
 
 		return $this->load->view('common/header', $data);
 	}
