@@ -35,6 +35,10 @@ h3 {font-size: 18px; }
   }
   .left-side{
     background-color: white;
+    padding-right:30px;
+  }
+  .left-side #logo{
+    text-align: left;
   }
    /*  -------------------     HEADER      ---------------------  */
   .header-cell {
@@ -131,8 +135,13 @@ h3 {font-size: 18px; }
  /*  -----------------      LEFT MENU    --------------------  */
  .column-left_ost{
     width:100%;
-    margin-right:30px;
+    margin-top:20px;
  }
+ .column-left_ost a{
+    border: none;
+    font-size: 14px;
+    text-align: left;
+}
 
  /*  -------------------     CONTENT      ---------------------  */
   .content-cell {
