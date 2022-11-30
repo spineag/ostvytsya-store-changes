@@ -144,6 +144,9 @@ h3 {font-size: 18px; }
   /* .grid-cell_ost{
 
   } */
+  .module-heading_ost{
+    padding: 70px 0 50px;
+  }
 
   /*  -------------------     PRODUCT      ---------------------  */
   .product-thumb_ost{
