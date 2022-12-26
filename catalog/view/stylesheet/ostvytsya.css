@@ -141,17 +141,17 @@ h3 {font-size: 18px; }
     font-size: 14px;
     text-align: left;
     color: #222222;
-}
-.column-left_ost a:hover{
     border-radius: 10px;
     margin-right: 20px;
-    background-color: #e4e4e4;
+}
+.column-left_ost a:hover{
+    background-color: #ebebeb;
 }
 .column-left_ost a.active{
-    background-color: #e4e4e4;
+    background-color: #ebebeb;
 }
 .column-left_ost a.active:hover{
-  background-color: #999999;
+    background-color: #e4e4e4;
 }
 
  /*  -------------------     CONTENT      ---------------------  */
