@@ -23,7 +23,7 @@ h3 {font-size: 18px; }
     max-width:1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 60px auto 100px;  
+    grid-template-rows: 60px auto 120px;  
     grid-template-columns: 250px auto;
     grid-template-areas: "left-side-cell header-cell" 
                          "left-side-cell content-cell"
@@ -258,14 +258,18 @@ h3 {font-size: 18px; }
     background-color: white;
 
   }
-  .fotter-cell-inner{
+  .footer-cell-inner{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .fotter-cell-inner a:hover{
+  .footer-cell-inner a{
+    color: #222222; 
+  }
+  .footer-cell-inner a:hover{
+    color: #3a3a3a;
     text-decoration: underline;
   }
 
