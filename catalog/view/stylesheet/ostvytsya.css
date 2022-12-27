@@ -23,7 +23,7 @@ h3 {font-size: 18px; }
     max-width:1440px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 60px auto 120px;  
+    grid-template-rows: 60px auto 160px;  
     grid-template-columns: 250px auto;
     grid-template-areas: "left-side-cell header-cell" 
                          "left-side-cell content-cell"
@@ -267,6 +267,7 @@ h3 {font-size: 18px; }
   }
   .footer-cell-inner a{
     color: #222222; 
+    font-size: 14px;
   }
   .footer-cell-inner a:hover{
     color: #3a3a3a;
