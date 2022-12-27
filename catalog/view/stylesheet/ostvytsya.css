@@ -146,7 +146,7 @@ h3 {font-size: 18px; }
     border-radius: 20px;
     margin-right: 20px;
 }
-.column-left_ost a:first-child, .column-left_ost a:last-child {
+.column-left_ost a.list-group-item:first-child, .column-left_ost a.list-group-item:last-child {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
