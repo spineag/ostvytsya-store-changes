@@ -1,13 +1,15 @@
 {{ header }}
 <div id="product-category" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
-  <div class="row">. {# {{ column_left }} #}
+  </ul> #}
+  <div class="row"> {# {{ column_left }} #}
     <div id="content" class="col">{{ content_top }}
-      <h2>{{ heading_title }}</h2>
+      {# <h2>{{ heading_title }}</h2> #}
+      <div class="module-heading_ost"><span> {{ heading_title }}</span></div>
+
       {% if thumb or description %}
         <div class="row">
           {% if thumb %}
@@ -19,6 +21,7 @@
         </div>
         <hr/>
       {% endif %}
+
       {% if categories %}
         <h3>{{ text_refine }}</h3>
         {% if categories|length <= 5 %}
@@ -46,13 +49,14 @@
           <br/>
         {% endif %}
       {% endif %}
+
       {% if products %}
         <div id="display-control" class="row">
-          <div class="col-lg-3">
+          {# <div class="col-lg-3">
             <div class="mb-3">
               <a href="{{ compare }}" id="compare-total" class="btn btn-primary d-block"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span class="d-none d-xl-inline">{{ text_compare }}</span></a>
             </div>
-          </div>
+          </div> #}
           <div class="col-lg-1 d-none d-lg-block">
             <div class="btn-group">
               <button type="button" id="button-list" class="btn btn-light" data-bs-toggle="tooltip" title="{{ button_list }}"><i class="fa-solid fa-table-list"></i></button>
@@ -82,16 +86,24 @@
             </div>
           </div>
         </div>
-        <div id="product-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+  
+        {# <div id="product-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
           {% for product in products %}
             <div class="col">{{ product }}</div>
           {% endfor %}
+        </div> #}
+        <div class="grid-container_ost">
+          {% for product in products %}
+            <div class="grid-cell_ost">{{ product }}</div>
+          {% endfor %}
         </div>
-        <div class="row">
+
+         <div class="row">
           <div class="col-sm-6 text-start">{{ pagination }}</div>
           <div class="col-sm-6 text-end">{{ results }}</div>
         </div>
       {% endif %}
+
       {% if not categories and not products %}
         <p>{{ text_no_results }}</p>
         <div class="d-inline-block pt-2 pd-2 w-100">
