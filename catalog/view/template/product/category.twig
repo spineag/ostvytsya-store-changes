@@ -57,7 +57,7 @@
               <a href="{{ compare }}" id="compare-total" class="btn btn-primary d-block"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span class="d-none d-xl-inline">{{ text_compare }}</span></a>
             </div>
           </div> #}
-          <div class="">
+          <div class="flex flex_end">
             <div class="segmented_buttons_ost">
               <button type="button" id="button-list" class="w50 svg_stroke" data-bs-toggle="tooltip" title="{{ button_list }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-list" viewBox="0 0 16 16">
@@ -72,8 +72,8 @@
             </div>
           </div>
           <div class="">
-            <div class="input-group">
-              <div class="input-group">
+            {# <div class="input-group"> #}
+              <div class="input-group w300">
                 <label for="input-sort" class="input-group-text_ost">{{ text_sort }}</label> <select id="input-sort" class="form-select_ost" onchange="location = this.value;">
                   {% for sorts in sorts %}
                     <option value="{{ sorts.href }}"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
@@ -81,17 +81,17 @@
                 </select>
               </div>
             </div>
-          </div>
+          {# </div> #}
           <div class="">
-            <div class="input-group">
-              <div class="input-group">
+            {# <div class="input-group"> #}
+              <div class="input-group w300">
                 <label for="input-limit" class="input-group-text_ost">{{ text_limit }}</label> <select id="input-limit" class="form-select_ost" onchange="location = this.value;">
                   {% for limits in limits %}
                     <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>{{ limits.text }}</option>
                   {% endfor %}
                 </select>
               </div>
-            </div>
+            {# </div> #}
           </div>
         </div>
   

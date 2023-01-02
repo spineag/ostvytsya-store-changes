@@ -341,4 +341,9 @@ h3 {font-size: 18px; }
 
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }
+.w300 { width:300px; }
 
+.flex { display: flex; align-items: center; }
+.flex_end { justify-content: flex-end; }
+.flex_start { justify-content: flex-start; }
+.flex_center { justify-content: center; }
