@@ -284,12 +284,14 @@ h3 {font-size: 18px; }
     border: 1px solid #efefef;
     color: #222222;
     fill: #222222;
-    stroke: none;
     background-color: white;
     border-radius: 0;
     margin:0;
     height:30px;
     cursor: pointer;
+  }
+  .segmented_buttons_ost button svg {
+    stroke:#222222;
   }
   .segmented_buttons_ost button:first-child{
     border-top-left-radius: 10px;
@@ -308,6 +310,9 @@ h3 {font-size: 18px; }
     background-color: #222222;
     color: white;
     fill: white;
+  }
+  .segmented_buttons_ost button:hover svg {
+    stroke:#222222;
   }
 
 
