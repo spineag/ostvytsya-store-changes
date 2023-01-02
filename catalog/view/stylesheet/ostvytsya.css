@@ -330,9 +330,13 @@ h3 {font-size: 18px; }
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 16px 12px;
-    appearance: none;
+    border: none;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
+  }
+  .form-select_ost:active, .form-select_ost:focus{
+    outline: none;
+    box-shadow: none;
   }
 
 /* --------------------  SHORTS  ---------------------  */
