@@ -273,11 +273,9 @@ h3 {font-size: 18px; }
 
   /* --------------------  COMMON  ---------------------  */
 
-  .btn_ost{
-    width:30px;
+
+  .segmented_buttons_ost{
     height:30px;
-    border-radius:10px;
-    transition: all 0.3s;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -287,21 +285,20 @@ h3 {font-size: 18px; }
     fill: #222222;
     stroke: none;
     background-color: white;
+    border-radius: 0;
   }
-  .btn_ost:hover{
+  .segmented_buttons_ost button:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .segmented_buttons_ost button:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .segmented_buttons_ost button:hover{
     background-color: #222222;
     color: white;
     fill: white;
   }
 
-  .btn_ost_group{
-    border-radius: 0;
-  }
-  .btn_ost_group .btn_ost:first-child{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  .btn_ost_group .btn_ost:last-child{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
+
