@@ -281,7 +281,7 @@ h3 {font-size: 18px; }
     padding: 0;
   }
   .segmented_buttons_ost button{
-    border-color: #efefef;
+    border: 1px solid #efefef;
     color: #222222;
     fill: #222222;
     stroke: none;
@@ -310,4 +310,7 @@ h3 {font-size: 18px; }
     fill: white;
   }
 
+
+/* --------------------  SHORTS  ---------------------  */
+.w50 { width:50px; }
 
