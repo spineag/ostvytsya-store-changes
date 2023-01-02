@@ -51,47 +51,37 @@
       {% endif %}
 
       {% if products %}
-        <div id="display-control" class="row">
+        <div id="display-control" class="row d-flex justify-content-end">
           {# <div class="col-lg-3">
             <div class="mb-3">
               <a href="{{ compare }}" id="compare-total" class="btn btn-primary d-block"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span class="d-none d-xl-inline">{{ text_compare }}</span></a>
             </div>
           </div> #}
-          <div class="flex flex_end">
-            <div class="segmented_buttons_ost">
-              <button type="button" id="button-list" class="w50 svg_stroke" data-bs-toggle="tooltip" title="{{ button_list }}">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-list" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-              </button>
-              <button type="button" id="button-grid" class="w50" data-bs-toggle="tooltip" title="{{ button_grid }}">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-grid-3x3" viewBox="0 0 16 16">
-                  <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
-                </svg>
-              </button>
-            </div>
+          <div class="segmented_buttons_ost wContent">
+            <button type="button" id="button-list" class="w50 svg_stroke" data-bs-toggle="tooltip" title="{{ button_list }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+            <button type="button" id="button-grid" class="w50" data-bs-toggle="tooltip" title="{{ button_grid }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+              </svg>
+            </button>
           </div>
-          <div class="">
-            {# <div class="input-group"> #}
-              <div class="input-group w300">
-                <label for="input-sort" class="input-group-text_ost">{{ text_sort }}</label> <select id="input-sort" class="form-select_ost" onchange="location = this.value;">
-                  {% for sorts in sorts %}
-                    <option value="{{ sorts.href }}"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
-                  {% endfor %}
-                </select>
-              </div>
-            </div>
-          {# </div> #}
-          <div class="">
-            {# <div class="input-group"> #}
-              <div class="input-group w300">
-                <label for="input-limit" class="input-group-text_ost">{{ text_limit }}</label> <select id="input-limit" class="form-select_ost" onchange="location = this.value;">
-                  {% for limits in limits %}
-                    <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>{{ limits.text }}</option>
-                  {% endfor %}
-                </select>
-              </div>
-            {# </div> #}
+          <div class="input-group wContent ms-4">
+            <label for="input-sort" class="input-group-text_ost">{{ text_sort }}</label> <select id="input-sort" class="form-select_ost" onchange="location = this.value;">
+              {% for sorts in sorts %}
+                <option value="{{ sorts.href }}"{% if sorts.value == '%s-%s'|format(sort, order) %} selected{% endif %}>{{ sorts.text }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="input-group wContent ms-4">
+            <label for="input-limit" class="input-group-text_ost">{{ text_limit }}</label> <select id="input-limit" class="form-select_ost" onchange="location = this.value;">
+              {% for limits in limits %}
+                <option value="{{ limits.href }}"{% if limits.value == limit %} selected{% endif %}>{{ limits.text }}</option>
+              {% endfor %}
+            </select>
           </div>
         </div>
   

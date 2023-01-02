@@ -278,6 +278,7 @@ h3 {font-size: 18px; }
     justify-content: center;
     align-items: center;
     padding: 0;
+    width:fit-content;
   }
   .segmented_buttons_ost button{
     border: 1px solid #efefef;
@@ -341,9 +342,8 @@ h3 {font-size: 18px; }
 
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }
+.w100 { width:100px; }
+.w200 { width:200px; }
 .w300 { width:300px; }
+.wContent { width: fit-content; }
 
-.flex { display: flex; align-items: center; }
-.flex_end { justify-content: flex-end; }
-.flex_start { justify-content: flex-start; }
-.flex_center { justify-content: center; }
