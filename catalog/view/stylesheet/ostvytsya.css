@@ -334,6 +334,7 @@ h3 {font-size: 18px; }
     border: none;
     font-size: 14px;
     font-weight: 500;
+    border-bottom: 1px solid #E4E4E4;
   }
   .form-select_ost:active, .form-select_ost:focus{
     outline: none;
