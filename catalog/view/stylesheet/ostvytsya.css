@@ -249,6 +249,13 @@ h3 {font-size: 18px; }
     border: none;
   }
 
+  .product-button {
+    padding: 12px 36px;
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    background: inherit;
+  }
   
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
