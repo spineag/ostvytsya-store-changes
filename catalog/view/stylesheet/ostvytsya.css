@@ -348,4 +348,6 @@ h3 {font-size: 18px; }
 .w200 { width:200px; }
 .w300 { width:300px; }
 .wContent { width: fit-content; }
+.mt-80 { margin-top:80px; }
+.mb-80 { margin-bottom:80px; }
 

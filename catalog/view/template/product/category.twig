@@ -1,11 +1,13 @@
 {{ header }}
+
 <div id="product-category" class="container">
   {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
   </ul> #}
-  <div class="row"> {# {{ column_left }} #}
+  <div class="row"> 
+    {# {{ column_left }} #}
     <div id="content" class="col">{{ content_top }}
       {# <h2>{{ heading_title }}</h2> #}
       <div class="module-heading_ost"><span> {{ heading_title }}</span></div>
@@ -112,4 +114,5 @@
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>
+
 {{ footer }}

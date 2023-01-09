@@ -1,12 +1,14 @@
 {{ header }}
+
 <div id="product-info" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
-    <div id="content" class="col">
+  </ul> #}
+  <div class="row">
+    {# {{ column_left }} #}
+    <div id="content" class="col mt-80">
       {{ content_top }}
       <div class="row mb-3">
         <div class="col-sm">
@@ -280,15 +282,22 @@
           {% endfor %}
         </p>
       {% endif %}
+      <div class="mb-80"></div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>
+    
+{{ footer }}
+
 </div>
+ 
+
+
+
+
 <script type="text/javascript"><!--
 $('#input-subscription').on('change', function (e) {
     var element = this;
-
     $('.subscription').addClass('d-none');
-
     $('#subscription-description-' + $(element).val()).removeClass('d-none');
 });
 
@@ -342,4 +351,5 @@ $(document).ready(function () {
     });
 });
 //--></script>
-{{ footer }}
+
+
