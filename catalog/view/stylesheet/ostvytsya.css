@@ -18,6 +18,8 @@ h3 {font-size: 18px; }
 .green3_ost     { color:#026251 }
 .green1_ost     { color:#74908B }
 .green2_ost     { color:#273A37 }
+.green4_ost     { color:#15803d }
+.red1_ost       { color:#dc2626 }
 
 .page {
     max-width:1440px;
@@ -350,4 +352,7 @@ h3 {font-size: 18px; }
 .wContent { width: fit-content; }
 .mt-80 { margin-top:80px; }
 .mb-80 { margin-bottom:80px; }
+.lh-13 { line-height: 1.3; }
+.lh-20 { line-height: 2.0; }
+.text14 { font-size:14px; }
 

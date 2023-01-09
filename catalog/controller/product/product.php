@@ -244,12 +244,15 @@ class Product extends \Opencart\System\Engine\Controller {
 
 			if ($product_info['quantity'] <= 0) {
 				$data['stock'] = $product_info['stock_status'];
+				$data['stock_quantity_ost'] = -1;
 			} elseif ($this->config->get('config_stock_display')) {
 				$data['stock'] = $product_info['quantity'];
+				$data['stock_quantity_ost'] = 1;
 			} else {
 				$data['stock'] = $this->language->get('text_instock');
+				$data['stock_quantity_ost'] = 1;
 			}
-
+	
 			$data['rating'] = (int)$product_info['rating'];
 			$data['review_status'] = (int)$this->config->get('config_review_status');
 
