@@ -45,10 +45,10 @@
             {% end if %} #}
           </ul>
           {% if price %}
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-end mt-80">
               {% if not special %}
                 <li>
-                  <h2><span class="price-new">{{ price }}</span></h2>
+                  <h1><span class="price-new">{{ price }}</span>cur:{{ currency }}</h1>
                 </li>
               {% else %}
                 <li><span class="price-old">{{ price }}</span></li>
