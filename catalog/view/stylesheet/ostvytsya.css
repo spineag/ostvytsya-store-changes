@@ -249,49 +249,45 @@ h3 {font-size: 18px; }
     border: none;
   }
 
-  .product-button {
-    padding: 12px 36px;
-    border-radius: 30px;
-    width: auto;
-    height: auto;
-    background: inherit;
-  }
 
-  .big_button_ost {
-    border: none;
-    border-radius: 20px;
-    padding: 16x;
+  /* product heart button */
+  .button_icon_heart{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    transition: all 0.3s;
   }
-  .big_button_ost svg{
+  .button_icon_heart svg{
     width: 24px;
     height: 24px;
-    fill: inherit;
-    margin: 16px;
-  }
-  .big_button_ost span{
-    color: inherit;
-  }
-  .big_button_ost_transparent{
-    background-color: transparent;
-    color: #222222;
     fill: #222222;
   }
-  .big_button_ost_black{
-    background-color: #222222;
-    color: white;
+  .button_icon_heart:hover{
+    fill: #222222;
+  }
+  .button_icon_heart svg:hover{
     fill: white;
   }
-  .big_button_ost_transparent:hover{
-    background-color: #222222;
-    color: white;
-    fill: white;
-  }
-  .big_button_ost_black:hover{
-    background-color: #3a3a3a;
-  }
-  
 
-  
+ /* product buy button */
+  .button_icon_buy{
+    padding: 0 12px;
+    height: 40px;
+    border-radius: 12px;
+    transition: all 0.3s;
+  }
+  .button_icon_buy span{
+    color: white;
+  }
+  .button_icon_buy svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  .button_icon_buy:hover{
+    fill: #555555;
+  }
+ 
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
     grid-area: footer-cell;
