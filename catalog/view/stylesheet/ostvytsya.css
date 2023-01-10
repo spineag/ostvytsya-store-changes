@@ -278,6 +278,7 @@ h3 {font-size: 18px; }
     border: none;
     border-radius: 12px;
     transition: all 0.3s;
+    background-color: #222222;
   }
   .button_icon_buy span{
     color: white;
