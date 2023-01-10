@@ -266,10 +266,10 @@ h3 {font-size: 18px; }
     width: 24px;
     height: 24px;
     fill: inherit;
+    margin: 16px;
   }
   .big_button_ost span{
     color: inherit;
-    padding: 0 16px;
   }
   .big_button_ost_transparent{
     background-color: transparent;
@@ -277,7 +277,7 @@ h3 {font-size: 18px; }
     fill: #222222;
   }
   .big_button_ost_black{
-    background-color: inherit;
+    background-color: #222222;
     color: white;
     fill: white;
   }
