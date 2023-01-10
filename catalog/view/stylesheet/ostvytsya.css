@@ -256,6 +256,41 @@ h3 {font-size: 18px; }
     height: auto;
     background: inherit;
   }
+
+  .big_button_ost {
+    border: none;
+    border-radius: 20px;
+    padding: 16x;
+  }
+  .big_button_ost svg{
+    width: 24px;
+    height: 24px;
+    fill: inherit;
+  }
+  .big_button_ost span{
+    color: inherit;
+    padding: 0 16px;
+  }
+  .big_button_ost_transparent{
+    background-color: transparent;
+    color: #222222;
+    fill: #222222;
+  }
+  .big_button_ost_black{
+    background-color: inherit;
+    color: white;
+    fill: white;
+  }
+  .big_button_ost_transparent:hover{
+    background-color: #222222;
+    color: white;
+    fill: white;
+  }
+  .big_button_ost_black:hover{
+    background-color: #3a3a3a;
+  }
+  
+
   
   /*  -------------------     FOOTER      ---------------------  */
   .footer-cell{
