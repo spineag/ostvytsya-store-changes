@@ -252,8 +252,10 @@ h3 {font-size: 18px; }
 
   /* product heart button */
   .button_icon_heart{
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
     border-radius: 12px;
     transition: all 0.3s;
   }
@@ -263,16 +265,17 @@ h3 {font-size: 18px; }
     fill: #222222;
   }
   .button_icon_heart:hover{
-    fill: #222222;
+    background-color: #222222;
   }
-  .button_icon_heart svg:hover{
+  .button_icon_heart:hover svg{
     fill: white;
   }
 
  /* product buy button */
   .button_icon_buy{
-    padding: 0 12px;
-    height: 40px;
+    padding: 0 24px;
+    height: 48px;
+    border: none;
     border-radius: 12px;
     transition: all 0.3s;
   }
