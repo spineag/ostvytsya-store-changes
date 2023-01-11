@@ -231,7 +231,6 @@ h3 {font-size: 18px; }
   }
   .product-thumb_ost .bottom_part_left .price-old_new{
     font-size: 18px;
-    margin-left:12px;
   }
   .product-thumb_ost .bottom_part_right{
     display: flex;
@@ -257,10 +256,12 @@ h3 {font-size: 18px; }
     font-weight: 400;
     color: #999999;
     text-decoration: line-through;
+    font-size: 18px;
   }
   .price-new_ost {
     font-weight: 700;
     color: #222222;
+    font-size: 28px;
   }
 
   /* product heart button */

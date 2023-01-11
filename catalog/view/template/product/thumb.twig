@@ -11,7 +11,9 @@
             {% if not special %}
               <span class="price-new_ost">{{ price }}</span>
             {% else %}
-              <span class="price-old">{{ price }}</span><span class="price-new_ost">{{ special }}</span> 
+              <span class="price-old">{{ price }}</span>
+              <br>
+              <span class="price-new_ost">{{ special }}</span> 
             {% endif %}
           </div>
         {% endif %}
