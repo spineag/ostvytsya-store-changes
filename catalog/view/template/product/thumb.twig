@@ -4,7 +4,18 @@
     <div class="image_part"><div style="background-image: url({{ thumb }});" class="image_part_inner"></div></div>    
     <div class="title_part"><span>{{ name }}</span></div>
     <div class="bottom_part">
-      <div class="bottom_part_left"> <span class="price-new_ost">{{ price }}</span> </div>
+      <div class="bottom_part_left"> 
+        {# <span class="price-new_ost">{{ price }}</span>  #}
+        {% if price %}
+          <div class="price">
+            {% if not special %}
+              <span class="price-new_ost">{{ price }}</span>
+            {% else %}
+              <span class="price-old">{{ price }}</span><span class="price-new_ost">{{ special }}</span> 
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
       <div class="bottom_part_right">
         <button type="submit" formaction="{{ add_to_wishlist }}" data-bs-toggle="tooltip" {# title="{{ button_wishlist }}" #} class="div_like-small-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-heart" viewBox="0 0 16 16">

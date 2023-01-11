@@ -177,7 +177,7 @@ h3 {font-size: 18px; }
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: 60px 30px;
   }
   .grid-container_ost:last-child{
     margin-bottom: 70px;
@@ -226,6 +226,13 @@ h3 {font-size: 18px; }
     color: #222222;
     padding: 10px 0;
   }
+  .product-thumb_ost .bottom_part_left .price-old_ost{
+    font-size: 14px;
+  }
+  .product-thumb_ost .bottom_part_left .price-old_new{
+    font-size: 18px;
+    margin-left:12px;
+  }
   .product-thumb_ost .bottom_part_right{
     display: flex;
   }
@@ -233,11 +240,10 @@ h3 {font-size: 18px; }
     background: white;
     border: none;
     margin: 0 5px;
-    border-radius: 10px;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
     border: 1px solid #222222;
-    width: 50px;
+    width: 60px;
     margin-right: 0;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:hover{
@@ -250,6 +256,7 @@ h3 {font-size: 18px; }
   .price-old_ost{
     font-weight: 400;
     color: #999999;
+    text-decoration: line-through;
   }
   .price-new_ost {
     font-weight: 700;
