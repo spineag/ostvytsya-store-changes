@@ -12,6 +12,7 @@ h3 {font-size: 18px; }
 
 .black_ost      { color:#222222 }
 .dark-grey_ost  { color:#3A3A3A }
+.halfdark-grey_ost  { color:#555555 }
 .grey_ost       { color:#999999 }
 .light-grey_ost { color:#E4E4E4 }
 .light2-grey_ost{ color:#efefef }
@@ -249,9 +250,8 @@ h3 {font-size: 18px; }
     border: none;
   }
 
-
   /* product heart button */
-  .button_icon_heart{
+  .button_icon_heart{ 
     width: 48px;
     height: 48px;
     border: none;
@@ -282,6 +282,7 @@ h3 {font-size: 18px; }
   }
   .button_icon_buy span{
     color: white;
+    padding-left: 12px;
   }
   .button_icon_buy svg{
     width: 24px;
