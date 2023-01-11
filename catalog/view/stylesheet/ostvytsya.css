@@ -55,7 +55,7 @@ h3 {font-size: 18px; }
   .div_like-small-button{
     width:30px;
     height:30px;
-    border-radius:10px;
+    border-radius:15px;
     transition: all 0.3s;
     cursor: pointer;
     display: flex;
@@ -256,7 +256,7 @@ h3 {font-size: 18px; }
     height: 48px;
     border: none;
     background-color: transparent;
-    border-radius: 12px;
+    border-radius: 24px;
     transition: all 0.3s;
   }
   .button_icon_heart svg{
@@ -276,7 +276,7 @@ h3 {font-size: 18px; }
     padding: 0 24px;
     height: 48px;
     border: none;
-    border-radius: 12px;
+    border-radius: 24px;
     transition: all 0.3s;
     background-color: #222222;
   }
@@ -289,7 +289,7 @@ h3 {font-size: 18px; }
     fill: white;
   }
   .button_icon_buy:hover{
-    fill: #555555;
+    background-color: #555555;
   }
  
   /*  -------------------     FOOTER      ---------------------  */
