@@ -334,10 +334,16 @@ h3 {font-size: 18px; }
   .alert_ost{
     max-width:600px; 
     color:#222222; 
-    fill:#222222; 
     line-height:1.5;
+    border-radius: 25px;
+    display: flex;
   }
-
+  .alert_ost svg{
+    width:40px;
+    height: 40px;
+    fill: #222222;
+    /* stroke: #222222; */
+  }
   /* --------------------  COMMON  ---------------------  */
 
   .segmented_buttons_ost{

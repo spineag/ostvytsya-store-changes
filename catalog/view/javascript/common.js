@@ -305,9 +305,14 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
 
             if (typeof json['error'] == 'string'){
                 $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
-                    <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
+                    </div>
                     <div> ${json['error']} </div>
-                    <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                    <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button></div>
                 </div>`);
             }
 
@@ -318,9 +323,14 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
 
                 if (typeof json['error'] == 'string') {
                     $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
-                        <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
+                        </div>
                         <div> ${json['error']['warning']} </div>
-                        <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                        <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button></div>
                     </div>`);
                 }
 
@@ -332,10 +342,15 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
 
             if (json['success']) {
                 // $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-                $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
-                    <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                $('#alert').prepend(`<div class="alert alert-success alert-dismissible alert_ost">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
+                    </div>
                     <div> ${json['success']} </div>
-                    <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                    <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button></div>
                 </div>`);
 
                 // Refresh
