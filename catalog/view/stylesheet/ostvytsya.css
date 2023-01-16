@@ -330,6 +330,14 @@ h3 {font-size: 18px; }
     text-decoration: underline;
   }
 
+  /*  --------------------  ALERT  -----------------------*/
+  .alert_ost{
+    max-width:600px; 
+    color:#222222; 
+    fill:#222222; 
+    line-height:1.5;
+  }
+
   /* --------------------  COMMON  ---------------------  */
 
   .segmented_buttons_ost{

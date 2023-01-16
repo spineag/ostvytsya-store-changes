@@ -299,13 +299,29 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
                 location = json['redirect'].replaceAll('&amp;', '&');
             }
 
-            if (typeof json['error'] == 'string') {
-                $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+            // if (typeof json['error'] == 'string') {
+            //     $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+            // }
+
+            if (typeof json['error'] == 'string'){
+                $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
+                    <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div> ${json['error']} </div>
+                    <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                </div>`);
             }
 
             if (typeof json['error'] == 'object') {
-                if (json['error']['warning']) {
-                    $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error']['warning'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+                // if (json['error']['warning']) {
+                //     $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error']['warning'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+                // }
+
+                if (typeof json['error'] == 'string') {
+                    $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
+                        <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                        <div> ${json['error']['warning']} </div>
+                        <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                    </div>`);
                 }
 
                 for (key in json['error']) {
