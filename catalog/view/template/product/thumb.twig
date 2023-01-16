@@ -7,12 +7,11 @@
       <div class="bottom_part_left"> 
         {# <span class="price-new_ost">{{ price }}</span>  #}
         {% if price %}
-          <div class="price">
+          <div class="price d-flex flex-column">
             {% if not special %}
               <span class="price-new_ost">{{ price }}</span>
             {% else %}
-              <span class="price-old_ost">{{ price }}</span>
-              <br>
+              <span class="price-old_ost lh-1">{{ price }}</span>
               <span class="price-new_ost">{{ special }}</span> 
             {% endif %}
           </div>
