@@ -331,7 +331,12 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
             }
 
             if (json['success']) {
-                $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+                // $('#alert').prepend('<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['success'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+                $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
+                    <div><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div> ${json['success']} </div>
+                    <div><button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+                </div>`);
 
                 // Refresh
                 var url = $(form).attr('data-oc-load');
