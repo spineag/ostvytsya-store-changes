@@ -337,12 +337,22 @@ h3 {font-size: 18px; }
     line-height:1.5;
     border-radius: 25px;
     display: flex;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3), 0px 1px 3px 1px rgba(0,0,0,.15);
+  }
+  .alert_ost div{
+    height: 100%;
+    margin-right: 10px;
   }
   .alert_ost svg{
     width:40px;
     height: 40px;
-    fill: #222222;
-    /* stroke: #222222; */
+    stroke: #3a3a3a;
+  }
+  .alert_ost .btn_close{
+    width: auto;
+    height: auto;
+    opacity: 1;
   }
   /* --------------------  COMMON  ---------------------  */
 

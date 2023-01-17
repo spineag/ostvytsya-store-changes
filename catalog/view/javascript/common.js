@@ -308,7 +308,7 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
                     <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
                     </div>
-                    <div> ${json['error']} </div>
+                    <div><span> ${json['error']} </span></div>
                     <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
@@ -326,7 +326,7 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
                         <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
                         </div>
-                        <div> ${json['error']['warning']} </div>
+                        <div><span> ${json['error']['warning']} </span></div>
                         <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
@@ -346,7 +346,7 @@ $(document).on('submit', 'form[data-oc-toggle=\'ajax\']', function (e) {
                     <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
                     </div>
-                    <div> ${json['success']} </div>
+                    <div><span> ${json['success']} </span></div>
                     <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
