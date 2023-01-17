@@ -214,11 +214,13 @@ h3 {font-size: 18px; }
     transition: all 0.25s;
   }
   .product-thumb_ost .title_part{
-    padding: 10px 0;
     font-size: 14px;
     width: 100%;
-    height: 36px;
+    height: 40px;
     color: #222222;
+    margin-top:10px;
+    display: flex;
+    align-items: center;
   }
   .product-thumb_ost .bottom_part{
     display: flex;
@@ -231,7 +233,7 @@ h3 {font-size: 18px; }
     font-size: 14px;
   }
   .product-thumb_ost .bottom_part_left .price-new_ost{
-    font-size: 18px;
+    font-size: 20px;
   }
   .product-thumb_ost .bottom_part_right{
     display: flex;
@@ -351,9 +353,8 @@ h3 {font-size: 18px; }
     height: 40px;
     stroke: #3a3a3a;
   }
-  .alert_ost a{
-    color: #024574;
-  }
+  .alert_ost a{ color: #024574; }
+  .alert_ost a:hover { color: #165e92; }
 
   .alert_ost .btn-close{
     width: auto;
