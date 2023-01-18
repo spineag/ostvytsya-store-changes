@@ -17,28 +17,30 @@
     <div id="content" class="col">{{ content_top }}
       <div class="row">
         <div class="col-sm-6">
-          <div class="card mb-3 br-25">
+          <div class="card mb-3 br-25 be4">
             <div class="card-body p20">
-              <h2>{{ text_new_customer }}</h2>
-              <p><strong>{{ text_register }}</strong></p>
+              {# <h2>{{ text_new_customer }}</h2> #}
+              <p class="p24">{{ text_register }}</p>
+              <br>
               <p>{{ text_register_account }}</p>
               <div class="text-end"><a href="{{ register }}" class="btn btn_ost btn_ost_grey">{{ button_continue }}</a></div></div>
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card mb-3 br-25">
+          <div class="card mb-3 br-25 be4">
             <div class="card-body p20">
               <form id="form-login" action="{{ login }}" method="post" data-oc-toggle="ajax">
-                <h2>{{ text_returning_customer }}</h2>
-                <p><strong>{{ text_i_am_returning_customer }}</strong></p>
+                {# <h2>{{ text_returning_customer }}</h2> #}
+                <p class="p24">{{ text_i_am_returning_customer }}</p>
+                <br>
                 <div class="mb-3">
-                  <label for="input-email" class="col-form-label">{{ entry_email }}</label>
+                  <label for="input-email" class="col-form-label p-0">{{ entry_email }}</label>
                   <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control br-25"/>
                 </div>
                 <div class="mb-3">
                   <label for="input-password" class="col-form-label">{{ entry_password }}</label>
                   <input type="password" name="password" value="{{ password }}" placeholder="{{ entry_password }}" id="input-password" class="form-control br-25"/>
-                  <a href="{{ forgotten }}">{{ text_forgotten }}</a>
+                  <a href="{{ forgotten }}" class="blue_ost text16">{{ text_forgotten }}</a>
                 </div>
                 <div class="text-end"><button type="submit" class="btn btn_ost btn_ost_grey">{{ button_login }}</button></div>
                 {% if redirect %}
