@@ -339,6 +339,7 @@ h3 {font-size: 18px; }
     line-height:1.5;
     border-radius: 25px;
     display: flex;
+    align-items: center;
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3), 0px 1px 3px 1px rgba(0,0,0,.15);
     background-color: white;
@@ -348,9 +349,10 @@ h3 {font-size: 18px; }
     margin-right: 10px;
   }
   .alert_ost svg{
-    width:40px;
-    height: 40px;
-    stroke: #3a3a3a;
+    width:30px;
+    height: 30px;
+    stroke: #999999;
+    display: block;
   }
   .alert_ost a{ color: #024574; }
   .alert_ost a:hover { color: #165e92; }
@@ -358,6 +360,7 @@ h3 {font-size: 18px; }
     width: auto;
     height: auto;
     opacity: 1;
+    padding: 1rem;
   }
 
   /* --------------------  COMMON  ---------------------  */
