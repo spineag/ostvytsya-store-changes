@@ -466,6 +466,14 @@ h3 {font-size: 18px; }
     box-shadow: none;
   }
 
+  .inner_a a{
+    color: #1a73e8;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .inner_a a:hover { color: #4896fc }
+
+
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }
 .w100 { width:100px; }
