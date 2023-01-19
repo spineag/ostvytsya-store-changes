@@ -13,7 +13,7 @@
       <br><br>
       <span class="inner_a">{{ text_account_already }}</span>
       <form id="form-register" action="{{ register }}" method="post" data-oc-toggle="ajax">
-        <fieldset id="account" class="mt-20">
+        <fieldset id="account" class="mt-60">
           <legend>{{ text_your_details }}</legend>
           {% if customer_groups|length > 1 %}
           <div class="row mb-3 required">
@@ -183,7 +183,7 @@
           {% endfor %}
         </fieldset>
 
-        <fieldset class="mt-20">
+        <fieldset class="mt-60">
           <legend>{{ text_your_password }}</legend>
           <div class="row mb-3 required">
             <label for="input-password" class="col-sm-2 col-form-label">{{ entry_password }}</label>
@@ -194,7 +194,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="mt-20">
+        {# <fieldset class="mt-60">
           <legend>{{ text_newsletter }}</legend>
           <div class="row mb-3">
             <label class="col-sm-2 col-form-label">{{ entry_newsletter }}</label>
@@ -210,13 +210,13 @@
             </div>
           </div>
         </fieldset>
-        {{ captcha }}
+        {{ captcha }} #}
 
-        <div class="d-inline-block pt-2 pd-2 w-100 ">
+        <div class="d-inline-block pt-2 pd-2 w-100 mt-60">
           <div class="float-end text-right">
             {% if text_agree %}
               <div class="form-check form-check-inline">
-                <label class="form-check-label">{{ text_agree }}</label> <input type="checkbox" name="agree" value="1" class="form-check-input"/>
+                <label class="form-check-label inner_a">{{ text_agree }}</label> <input type="checkbox" name="agree" value="1" class="form-check-input "/>
               </div>
             {% endif %}
             <button type="submit" class="btn  btn_ost btn_ost_grey">{{ button_continue }}</button>
