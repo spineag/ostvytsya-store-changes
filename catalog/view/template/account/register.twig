@@ -10,10 +10,10 @@
     <div id="content" class="col">
     {{ content_top }}
       <span class="text24">{{ heading_title }}</span>
-      <br>
+      <br><br>
       <span class="inner_a">{{ text_account_already }}</span>
       <form id="form-register" action="{{ register }}" method="post" data-oc-toggle="ajax">
-        <fieldset id="account">
+        <fieldset id="account" class="mt-20">
           <legend>{{ text_your_details }}</legend>
           {% if customer_groups|length > 1 %}
           <div class="row mb-3 required">
@@ -183,7 +183,7 @@
           {% endfor %}
         </fieldset>
 
-        <fieldset>
+        <fieldset class="mt-20">
           <legend>{{ text_your_password }}</legend>
           <div class="row mb-3 required">
             <label for="input-password" class="col-sm-2 col-form-label">{{ entry_password }}</label>
@@ -193,7 +193,8 @@
             </div>
           </div>
         </fieldset>
-        <fieldset>
+
+        <fieldset class="mt-20">
           <legend>{{ text_newsletter }}</legend>
           <div class="row mb-3">
             <label class="col-sm-2 col-form-label">{{ entry_newsletter }}</label>
@@ -211,7 +212,7 @@
         </fieldset>
         {{ captcha }}
 
-        <div class="d-inline-block pt-2 pd-2 w-100">
+        <div class="d-inline-block pt-2 pd-2 w-100 ">
           <div class="float-end text-right">
             {% if text_agree %}
               <div class="form-check form-check-inline">
