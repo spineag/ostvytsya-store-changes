@@ -1,38 +1,38 @@
 {{ header }}
 <div id="account-account" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
+  </ul> #}
   {% if success %}
     <div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> {{ success }}</div>
   {% endif %}
-  <div class="row">{{ column_left }}
+  <div class="row mt-60">{{ column_left }}
     <div id="content" class="col">{{ content_top }}
       <h2>{{ text_my_account }}</h2>
-      <ul class="list-unstyled">
-        <li><a href="{{ edit }}">{{ text_edit }}</a></li>
-        <li><a href="{{ password }}">{{ text_password }}</a></li>
-        <li><a href="{{ address }}">{{ text_address }}</a></li>
-        <li><a href="{{ payment_method }}">{{ text_payment_method }}</a></li>
-        <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+      <ul class="list-unstyled mt-20 lh-20">
+        <li><a href="{{ edit }}" class="blue_ost">{{ text_edit }}</a></li>
+        <li><a href="{{ password }}" class="blue_ost">{{ text_password }}</a></li>
+        <li><a href="{{ address }}" class="blue_ost">{{ text_address }}</a></li>
+        <li><a href="{{ payment_method }}" class="blue_ost">{{ text_payment_method }}</a></li>
+        <li><a href="{{ wishlist }}" class="blue_ost">{{ text_wishlist }}</a></li>
       </ul>
-      <h2>
+      <h2 class="mt-60">
         {{ text_my_orders }}
       </h2>
-      <ul class="list-unstyled">
-        <li><a href="{{ order }}">{{ text_order }}</a></li>
-        <li><a href="{{ subscription }}">{{ text_subscription }}</a></li>
-        <li><a href="{{ download }}">{{ text_download }}</a></li>
+      <ul class="list-unstyled mt-20 lh-20">
+        <li><a href="{{ order }}" class="blue_ost">{{ text_order }}</a></li>
+        <li><a href="{{ subscription }}" class="blue_os">{{ text_subscription }}</a></li>
+        <li><a href="{{ download }}" class="blue_ost">{{ text_download }}</a></li>
         {% if reward %}
-          <li><a href="{{ reward }}">{{ text_reward }}</a></li>
+          <li><a href="{{ reward }}" class="blue_ost">{{ text_reward }}</a></li>
         {% endif %}
-        <li><a href="{{ return }}">{{ text_return }}</a></li>
-        <li><a href="{{ transaction }}">{{ text_transaction }}</a></li>
+        <li><a href="{{ return }}" class="blue_ost">{{ text_return }}</a></li>
+        <li><a href="{{ transaction }}" class="blue_ost">{{ text_transaction }}</a></li>
       </ul>
-      {% if affiliate %}
-        <h2>
+      {# {% if affiliate %}
+        <h2 class="mt-60">
           {{ text_my_affiliate }}
         </h2>
         <ul class="list-unstyled">
@@ -43,13 +43,13 @@
             <li><a href="{{ tracking }}">{{ text_tracking }}</a></li>
           {% endif %}
         </ul>
-      {% endif %}
-      <h2>
+      {% endif %} #}
+      {# <h2>
         {{ text_my_newsletter }}
-      </h2>
+      </h2 class="mt-60">
       <ul class="list-unstyled">
         <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-      </ul>
+      </ul> #}
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>
