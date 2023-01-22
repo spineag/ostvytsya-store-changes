@@ -34,19 +34,22 @@ class Featured extends \Opencart\System\Engine\Controller {
 				}
 
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
-					$price = $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					// $price = $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$price = $this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'));
 				} else {
 					$price = false;
 				}
 
 				if ((float)$product['special']) {
-					$special = $this->currency->format($this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					// $special = $this->currency->format($this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$special = $this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax'));
 				} else {
 					$special = false;
 				}
 
 				if ($this->config->get('config_tax')) {
-					$tax = $this->currency->format((float)$product['special'] ? $product['special'] : $product['price'], $this->session->data['currency']);
+					// $tax = $this->currency->format((float)$product['special'] ? $product['special'] : $product['price'], $this->session->data['currency']);
+					$tax = (float)$product['special'] ? $product['special'] : $product['price'];
 				} else {
 					$tax = false;
 				}
@@ -59,6 +62,7 @@ class Featured extends \Opencart\System\Engine\Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
+					'currency'    =>  $this->session->data['currency'],
 					'minimum'     => $product['minimum'] > 0 ? $product['minimum'] : 1,
 					'rating'      => (int)$product['rating'],
 					'href'        => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])

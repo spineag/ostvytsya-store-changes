@@ -292,19 +292,22 @@ class Product extends \Opencart\System\Engine\Controller {
 			}
 
 			if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
-				$data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				// $data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				$data['price'] = $this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
 			} else {
 				$data['price'] = false;
 			}
 
 			if ((float)$product_info['special']) {
-				$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				// $data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				$data['special'] = $this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax'));
 			} else {
 				$data['special'] = false;
 			}
 
 			if ($this->config->get('config_tax')) {
-				$data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
+				// $data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
+				$data['tax'] = (float)$product_info['special'] ? $product_info['special'] : $product_info['price'];
 			} else {
 				$data['tax'] = false;
 			}
@@ -317,7 +320,8 @@ class Product extends \Opencart\System\Engine\Controller {
 				foreach ($discounts as $discount) {
 					$data['discounts'][] = [
 						'quantity' => $discount['quantity'],
-						'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency'])
+						// 'price'    => $this->currency->format($this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency'])
+						'price'    => $this->tax->calculate($discount['price'], $product_info['tax_class_id'], $this->config->get('config_tax'))
 					];
 				}
 			}
@@ -340,7 +344,8 @@ class Product extends \Opencart\System\Engine\Controller {
 					foreach ($option['product_option_value'] as $option_value) {
 						if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
 							if ((($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) && (float)$option_value['price']) {
-								$price = $this->currency->format($this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax') ? 'P' : false), $this->session->data['currency']);
+								// $price = $this->currency->format($this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax') ? 'P' : false), $this->session->data['currency']);
+								$price = $this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax') ? 'P' : false);
 							} else {
 								$price = false;
 							}
@@ -357,6 +362,7 @@ class Product extends \Opencart\System\Engine\Controller {
 								'name'                    => $option_value['name'],
 								'image'                   => $image,
 								'price'                   => $price,
+								'currency'                => $this->session->data['currency'],
 								'price_prefix'            => $option_value['price_prefix']
 							];
 						}
@@ -382,7 +388,8 @@ class Product extends \Opencart\System\Engine\Controller {
 			foreach ($results as $result) {
 				$description = '';
 
-				$trial_price = $this->currency->format($this->tax->calculate($result['trial_price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				// $trial_price = $this->currency->format($this->tax->calculate($result['trial_price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				$trial_price = $this->tax->calculate($result['trial_price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
 				$trial_cycle = $result['trial_cycle'];
 				$trial_frequency = $this->language->get('text_' . $result['trial_frequency']);
 				$trial_duration = $result['trial_duration'];
@@ -391,7 +398,8 @@ class Product extends \Opencart\System\Engine\Controller {
 					$description .= sprintf($this->language->get('text_subscription_trial'), $trial_price, $trial_cycle, $trial_frequency, $trial_duration);
 				}
 
-				$price = $this->currency->format($this->tax->calculate($result['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				// $price = $this->currency->format($this->tax->calculate($result['price'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				$price = $this->tax->calculate($result['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
 				$cycle = $result['cycle'];
 				$frequency = $this->language->get('text_' . $result['frequency']);
 				$duration = $result['duration'];
@@ -431,19 +439,22 @@ class Product extends \Opencart\System\Engine\Controller {
 				}
 
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
-					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					// $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$price = $this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax'));
 				} else {
 					$price = false;
 				}
 
 				if ((float)$result['special']) {
-					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					// $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$special = $this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax'));
 				} else {
 					$special = false;
 				}
 
 				if ($this->config->get('config_tax')) {
-					$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);
+					// $tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);
+					$tax = (float)$result['special'] ? $result['special'] : $result['price'];
 				} else {
 					$tax = false;
 				}
@@ -456,6 +467,7 @@ class Product extends \Opencart\System\Engine\Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
+					'currency'    => $this->session->data['currency'],
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
 					'href'        => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
