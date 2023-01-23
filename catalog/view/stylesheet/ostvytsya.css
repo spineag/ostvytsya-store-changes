@@ -505,6 +505,7 @@ header{
 .text18 { font-size:18px; }
 .text20 { font-size:20px; }
 .text24 { font-size:24px; }
+.br-0 { border-radius: 0; }
 .br-25 { border-radius: 25px; }
 .p20 { padding: 20px; }
 .be4 { border: 1px solid #e4e4e4; }

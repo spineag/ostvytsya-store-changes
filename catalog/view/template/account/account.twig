@@ -6,7 +6,12 @@
     {% endfor %}
   </ul> #}
   {% if success %}
-    <div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> {{ success }}</div>
+    <div class="alert alert-success alert-dismissible alert_ost mw-100 br-0">
+    {# <i class="fa-solid fa-circle-check me-2"></i>  #}
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6 me-2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    {{ success }}</div>
   {% endif %}
   <div class="row mt-60">{{ column_left }}
     <div id="content" class="col">{{ content_top }}
