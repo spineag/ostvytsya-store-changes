@@ -44,11 +44,11 @@
             <ul class="list-unstyled text-end mt-80">
               {% if not special %}
                 <li>
-                  <span class="price-new_ost">{{ price }}</span>{{ currency }}
+                  <span class="price-new_ost">{{ price }} <span class="currency_ost">{{ currency }}</span> </span>
                 </li>
               {% else %}
-                <li><span class="price-old_ost">{{ price }}</span></li>
-                <li><span class="price-new_ost">{{ special }}</span></li>
+                <li><span class="price-old_ost">{{ price }} <span class="currency_ost">{{ currency }}</span> </span></li>
+                <li><span class="price-new_ost">{{ special }} <span class="currency_ost">{{ currency }}</span> </span></li>
               {% endif %}
               {# {% if tax %}
                 <li>{{ text_tax }} {{ tax }}</li>

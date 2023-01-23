@@ -8,10 +8,10 @@
         {% if price %}
           <div class="price d-flex flex-column">
             {% if not special %}
-              <span class="price-new_ost">{{ price }}</span>
+              <span class="price-new_ost">{{ price }} <span class="currency_ost">{{ currency }}</span> </span>
             {% else %}
-              <span class="price-old_ost lh-1">{{ price }}</span>
-              <span class="price-new_ost">{{ special }}</span> 
+              <span class="price-old_ost lh-1">{{ price }} <span class="currency_ost">{{ currency }}</span> </span>
+              <span class="price-new_ost">{{ special }} <span class="currency_ost">{{ currency }}</span> </span> 
             {% endif %}
           </div>
         {% endif %}
