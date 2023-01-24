@@ -62,7 +62,7 @@ class Featured extends \Opencart\System\Engine\Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
-					'currency'    =>  $this->session->data['currency'],
+					'currency'    => $this->currency->currencyName($this->session->data['currency'], $this->config->get('config_language')),
 					'minimum'     => $product['minimum'] > 0 ? $product['minimum'] : 1,
 					'rating'      => (int)$product['rating'],
 					'href'        => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])

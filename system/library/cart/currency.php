@@ -57,6 +57,11 @@ class Currency {
 		return $string;
 	}
 
+	public function currencyName(string $currency, string $lang): string {
+		if ($lang  == 'uk-ua') return $this->currencies[$currency]['symbol_right'];
+		else return strtolower($currency);
+	}
+
 	public function convert(float $value, string $from, string $to): float {
 		if (isset($this->currencies[$from])) {
 			$from = $this->currencies[$from]['value'];

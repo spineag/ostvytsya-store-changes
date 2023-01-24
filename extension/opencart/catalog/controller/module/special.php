@@ -60,7 +60,7 @@ class Special extends \Opencart\System\Engine\Controller {
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,
-					'currency'    => $this->session->data['currency'],
+					'currency'    => $this->currency->currencyName($this->session->data['currency'], $this->config->get('config_language')),
 					'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
 					'rating'      => $result['rating'],
 					'href'        => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
