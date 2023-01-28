@@ -483,6 +483,26 @@ header{
     border-color: #4896fc;
   }
 
+  .table_ost{
+    border-color: #efefef;
+  }
+  .table_ost tr{
+    border-color: inherit;
+  }
+  .table_ost tr:first-child{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .table_ost tr:first-child{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .table_sot tr:hover{
+    background-color: transparent;
+  }
+  .table_ost td{
+    border-color: inherit;
+  }
 
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }

@@ -1,20 +1,24 @@
 {{ header }}
 <div id="account-address" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
+  </ul> #}
   {% if success %}
-    <div class="alert alert-success alert-dismissible"><i class="fa-solid fa-circle-check"></i> {{ success }}</div>
+    <div class="alert alert-success alert-dismissible alert_ost mw-100 br-0"><i class="fa-solid fa-circle-check w-6 h-6 me-2"></i> {{ success }}</div>
   {% endif %}
-  <div class="row">{{ column_left }}
+
+  <div class="row mt-60">
+  {{ column_left }}
     <div id="content" class="col">{{ content_top }}
-      <h1>{{ text_address_book }}</h1>
+      <h2>{{ text_address_book }}</h2>
+      <br><br>
       <div id="address">{{ list }}</div>
+      <br>
       <div class="d-inline-block pt-2 pd-2 w-100">
-        <div class="float-start"><a href="{{ back }}" class="btn btn-light">{{ button_back }}</a></div>
-        <div class="float-end"><a href="{{ add }}" class="btn btn-primary">{{ button_new_address }}</a></div>
+        <div class="float-start"><a href="{{ back }}" class="btn btn_ost btn_ost_grey">{{ button_back }}</a></div>
+        <div class="float-end"><a href="{{ add }}" class="btn btn_ost btn_ost_grey">{{ button_new_address }}</a></div>
       </div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>
