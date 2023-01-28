@@ -493,7 +493,7 @@ header{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  .table_ost tr:first-child{
+  .table_ost tr:last-child{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
