@@ -486,6 +486,9 @@ header{
   .table_ost{
     border-color: #efefef;
   }
+  .small_image_ost{
+    max-width:200px;
+  }
 
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }
