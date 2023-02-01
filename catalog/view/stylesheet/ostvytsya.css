@@ -398,7 +398,22 @@ header{
   .btn_ost_black:hover{
     background-color: #666666;
   }
-
+  .btn_ost_noui{
+    background-color: transparent;
+    stroke-width: 1px;
+  }
+  .btn_ost_noui svg{
+    width:24px;
+    height: 24px;
+    display: inline-block;
+  }
+  .btn_ost_noui:hover{
+    stroke-width: 2px;
+  }
+  .btn_ost_noui.disabled{
+    pointer-events: none;
+    opacity: .7;
+  }
 
   .segmented_buttons_ost{
     display: flex;

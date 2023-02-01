@@ -101,6 +101,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 	public function getList(): string {
 		$data['list'] = $this->url->link(' ', 'language=' . $this->config->get('config_language'));
 		$data['product_edit'] = $this->url->link('checkout/cart|edit', 'language=' . $this->config->get('config_language'));
+		$data['product_plus'] = $this->url->link('checkout/cart|plus', 'language=' . $this->config->get('config_language'));
+		$data['product_minus'] = $this->url->link('checkout/cart|minus', 'language=' . $this->config->get('config_language'));
 		$data['product_remove'] = $this->url->link('checkout/cart|remove', 'language=' . $this->config->get('config_language'));
 		$data['voucher_remove'] = $this->url->link('checkout/voucher|remove', 'language=' . $this->config->get('config_language'));
 
@@ -316,6 +318,75 @@ class Cart extends \Opencart\System\Engine\Controller {
 		} else {
 			$quantity = 1;
 		}
+
+		// Handles single item update
+		$this->cart->update($key, $quantity);
+
+		if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
+			$json['success'] = $this->language->get('text_edit');
+		} else {
+			$json['redirect'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'), true);
+		}
+
+		unset($this->session->data['shipping_methods']);
+		unset($this->session->data['payment_methods']);
+		unset($this->session->data['reward']);
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+	}
+
+	public function plus(): void {
+		$this->load->language('checkout/cart');
+
+		$json = [];
+
+		if (isset($this->request->post['key'])) {
+			$key = (int)$this->request->post['key'];
+		} else {
+			$key = 0;
+		}
+
+		if (isset($this->request->post['quantity'])) {
+			$quantity = (int)$this->request->post['quantity'] + 1;
+		} else {
+			$quantity = 1;
+		}
+
+		// Handles single item update
+		$this->cart->update($key, $quantity);
+
+		if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
+			$json['success'] = $this->language->get('text_edit');
+		} else {
+			$json['redirect'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'), true);
+		}
+
+		unset($this->session->data['shipping_methods']);
+		unset($this->session->data['payment_methods']);
+		unset($this->session->data['reward']);
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+	}
+
+	public function minus(): void {
+		$this->load->language('checkout/cart');
+
+		$json = [];
+
+		if (isset($this->request->post['key'])) {
+			$key = (int)$this->request->post['key'];
+		} else {
+			$key = 0;
+		}
+
+		if (isset($this->request->post['quantity'])) {
+			$quantity = (int)$this->request->post['quantity'] - 1;
+		} else {
+			$quantity = 1;
+		}
+		if ($quantity < 1) $quantity = 1;
 
 		// Handles single item update
 		$this->cart->update($key, $quantity);

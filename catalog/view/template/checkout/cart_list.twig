@@ -1,5 +1,5 @@
 <div class="table-responsive">
-  <table class="table table-bordered">
+  <table class="table table-bordered table_ost">
     <thead>
       <tr>
         <td class="text-center">{{ column_image }}</td>
@@ -13,7 +13,7 @@
     <tbody>
       {% for product in products %}
         <tr>
-          <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail"/></a> {% endif %}</td>
+          <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="small_image_ost"/></a> {% endif %}</td>
           <td class="text-start text-wrap"><a href="{{ product.href }}">{{ product.name }}</a>{% if not product.stock %} <span class="text-danger">***</span>{% endif %}
             {% if product.option %}
               {% for option in product.option %}
@@ -33,10 +33,27 @@
           <td class="text-start">{{ product.model }}</td>
           <td class="text-start">
             <form method="post" data-oc-target="#shopping-cart">
-              <div class="input-group">
-                <input type="text" name="quantity" value="{{ product.quantity }}" size="1" class="form-control"> <input type="hidden" name="key" value="{{ product.cart_id }}">
-                <button type="submit" formaction="{{ product_edit }}" data-bs-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary"><i class="fa-solid fa-rotate"></i></button>
-                <button type="submit" formaction="{{ product_remove }}" data-bs-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
+              <div class="d-flex">
+                <button type="submit" formaction="{{ product_minus }}" data-bs-toggle="tooltip" class="btn btn_ost btn_ost_noui">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="inherit" stroke="inherit" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                  </svg>
+                </button>
+                <input type="text" name="quantity" value="{{ product.quantity }}" size="1" class="form-control m-1 w-auto"> <input type="hidden" name="key" value="{{ product.cart_id }}">
+                <button type="submit" formaction="{{ product_plus }}" data-bs-toggle="tooltip" class="btn btn_ost btn_ost_noui">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="inherit" stroke="inherit" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+                
+                {# <button type="submit" formaction="{{ product_edit }}" data-bs-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary">
+                  <i class="fa-solid fa-rotate"></i>
+                </button> #}
+                <button type="submit" formaction="{{ product_remove }}" data-bs-toggle="tooltip" {#title="{{ button_remove }}"#} class="btn btn_ost btn_ost_grey stroke-none w60 ms-3">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                  </svg>
+                </button>
               </div>
             </form>
           </td>
@@ -44,7 +61,7 @@
           <td class="text-end">{{ product.total }}</td>
         </tr>
       {% endfor %}
-      {% for voucher in vouchers %}
+      {# {% for voucher in vouchers %}
         <tr>
           <td></td>
           <td class="text-start text-wrap">{{ voucher.description }}</td>
@@ -61,7 +78,7 @@
           <td class="text-end">{{ voucher.amount }}</td>
           <td class="text-end">{{ voucher.amount }}</td>
         </tr>
-      {% endfor %}
+      {% endfor %} #}
     </tbody>
     <tfoot id="checkout-total">
       {% for total in totals %}
