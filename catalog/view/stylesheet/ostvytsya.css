@@ -506,6 +506,14 @@ header{
     max-width:200px;
   }
 
+  .invis_ost{
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    visibility: hidden;
+  }
+
 /* --------------------  SHORTS  ---------------------  */
 .w50 { width:50px; }
 .w60 { width:60px; }
