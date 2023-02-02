@@ -105,8 +105,15 @@ $('#shopping-cart').on('submit', 'form', function (e) {
 });
 
 $('.invisibleProductEdit').parent().find('input[name="quantity"]').change(e =>{
-  console.log($(this.currentTarget).parent().find('.invisibleProductEdit'));
-  $(this.currentTarget).parent().find('.invisibleProductEdit').submit();
+  console.log('change');
+  {# $(this.currentTarget).parent().find('.invisibleProductEdit').submit(); #}
+});
+$('.invisibleProductEdit').parent().find('input[name="quantity"]').blur(e =>{
+  console.log('blur');
+});
+$('.invisibleProductEdit').parent().find('input[name="quantity"]').keypress(e =>{
+  console.log('keypress');
+  console.log(e.which);
 });
 //--></script>
 {{ footer }}
