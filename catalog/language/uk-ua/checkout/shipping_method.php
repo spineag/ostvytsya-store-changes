@@ -1,11 +1,15 @@
 <?php
 // Heading
-$_['heading_title']          = 'Shipping Method';
+$_['heading_title']          = 'Спосіб оплати';
 
 // Text
-$_['text_success']           = 'Success: You have changed shipping method!';
+$_['text_stored']           = 'Збережені способи оплати';
+$_['text_comments']         = 'Додати коментар';
+$_['text_agree']            = 'Я прочитав та погоджуюсь з <a href="%s" class="modal-link"><b>%s</b></a>';
+$_['text_success']          = 'Спосіб оплати змінено';
+$_['text_comment']          = 'Коментар додано';
 
 // Error
-$_['error_shipping_address'] = 'Warning: Shipping address required!';
-$_['error_shipping_method']  = 'Warning: Shipping method required!';
-$_['error_no_shipping']      = 'Warning: No Shipping options are available. Please <a href="%s">contact us</a> for assistance!';
+$_['error_shipping_address'] = 'Необхідно вказати адресу!';
+$_['error_shipping_method']  = 'Необхідно вказати спосіб оплати!';
+$_['error_no_shipping'] = 'Немає доступних способів оплати. Будь ласка <a href="%s">зв&#39;яжіться з адміністрацією</a>!';
