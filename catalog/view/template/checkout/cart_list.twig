@@ -43,9 +43,9 @@
                   </button>
 
                   <div class="d-flex justify-content-around align-items-center">
-                    <input type="text" name="quantity" value="{{ product.quantity }}" size="2" class="form-control border-0 p-0 w-auto text-center">
+                    <input type="text" name="quantity" value="{{ product.quantity }}" size="2" class="form-control border-0 p-0 w40 text-center pe-none">
                     <input type="hidden" name="key" value="{{ product.cart_id }}">
-                    <input type="submit" formaction="{{ product_edit }}" class="invis_ost invisibleProductEdit w-0">
+                    {# <input type="submit" formaction="{{ product_edit }}" class="invis_ost invisibleProductEdit w-0"> #}
                   </div>
 
                   <button type="submit" formaction="{{ product_plus }}" data-bs-toggle="tooltip" class="btn btn_ost btn_ost_noui p-0">
