@@ -414,6 +414,9 @@ header{
     pointer-events: none;
     opacity: .7;
   }
+  .btn_ost_noui:active, .btn_ost_noui:focus{
+    outline: none;
+  }
 
   .segmented_buttons_ost{
     display: flex;

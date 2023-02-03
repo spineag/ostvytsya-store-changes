@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']         = 'Адреса доставки';
+$_['heading_title']         = 'Адреса доставки товарів';
 
 // Text
 $_['text_address_new'] = 'Використати нову адресу';
