@@ -1,6 +1,7 @@
 <form id="form-shipping-method">
   <fieldset>
-    <legend>{{ heading_title }}</legend>
+    {# <legend>{{ heading_title }}</legend> #}
+    <legend>{{ shipping_method_heading_title }}</legend>
     <br>
     <div class="d-flex">
       <select name="shipping_method" id="input-shipping-method" class="form-select br-25" {% if not shipping_methods %} disabled{% endif %}>
