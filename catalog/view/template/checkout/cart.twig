@@ -112,7 +112,7 @@ console.log('url:', $(button).attr('formaction'));
                 </div>`);
             }
 
-            {# /* if (json['success']) {
+            if (json['success']) {
                 $('#alert').prepend(`<div class="alert alert-success alert-dismissible alert_ost mw-100 br-0">
                   <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
@@ -123,7 +123,7 @@ console.log('url:', $(button).attr('formaction'));
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                   </button>
                 </div>`);
-            }*/ #}
+            }
 
             $('#shopping-cart').load('index.php?route=checkout/cart|list&language={{ language }}', {}, function () {
                 $('#header-cart').load('index.php?route=common/cart|info&language={{ language }}');

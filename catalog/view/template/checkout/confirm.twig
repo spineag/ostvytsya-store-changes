@@ -1,5 +1,5 @@
 <div class="table-responsive">
-  <table class="table table-bordered table-hover">
+  <table class="table table-bordered table_ost">
     <thead>
       <tr>
         <td class="text-start">{{ column_name }}</td>
@@ -32,17 +32,18 @@
     <tfoot>
       {% for total in totals %}
         <tr>
-          <td class="text-end"><strong>{{ total.title }}</strong></td>
-          <td class="text-end">{{ total.text }}</td>
+          <td class="text-end">{{ total.title }}</td>
+          <td class="text-end"><b>{{ total.text }}</b></td>
         </tr>
       {% endfor %}
     </tfoot>
   </table>
 </div>
+
 <div id="checkout-payment">
   {% if payment %}
     {{ payment }}
   {% else %}
-    <div class="text-end"><button type="button" class="btn btn-primary" disabled>{{ button_confirm }}</button></div>
+    <div class="text-end"><button type="button" class="btn btn_ost btn_ost_grey" disabled>{{ button_confirm }}</button></div>
   {% endif %}
 </div>

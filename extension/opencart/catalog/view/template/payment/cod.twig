@@ -1,5 +1,5 @@
 <div class="d-inline-block pt-2 pd-2 w-100 text-end">
-  <button type="button" id="button-confirm" class="btn btn-primary">{{ button_confirm }}</button>
+  <button type="button" id="button-confirm" class="btn btn_ost btn_ost_grey">{{ button_confirm }}</button>
 </div>
 <script type="text/javascript"><!--
 $('#button-confirm').on('click', function () {
@@ -16,7 +16,17 @@ $('#button-confirm').on('click', function () {
         },
         success: function (json) {
             if (json['error']) {
-                $('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+                {# //$('#alert').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json['error'] + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>'); #}
+                $('#alert').prepend(`<div class="alert alert-danger alert-dismissible alert_ost">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" /></svg>
+                    </div>
+                    <div><span> ${json['error']} </span></div>
+                    <div><button type="button" class="btn-close" style="background:none" data-bs-dismiss="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button></div>
+                </div>`);
             }
 
             if (json['redirect']) {
