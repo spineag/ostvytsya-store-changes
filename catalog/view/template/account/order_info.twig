@@ -1,14 +1,16 @@
 {{ header }}
 <div id="account-order" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
+  </ul> #}
+  <div class="row mt-60">
+    {{ column_left }}
     <div id="content" class="col">{{ content_top }}
-      <h1>{{ heading_title }}</h1>
-      <table class="table table-bordered table-hover">
+      <h2>{{ heading_title }}</h2>
+      <br><br>
+      <table class="table table-bordered table_ost">
         <thead>
           <tr>
             <td class="text-start" colspan="2">{{ text_order_detail }}</td>
@@ -28,7 +30,7 @@
           </tr>
         </tbody>
       </table>
-      <table class="table table-bordered table-hover">
+      <table class="table table-bordered table_ost mt-20">
         <thead>
           <tr>
             <td class="text-start" style="width: 50%; vertical-align: top;">{{ text_payment_address }}</td>
@@ -44,8 +46,8 @@
             {% endif %} </tr>
         </tbody>
       </table>
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+      <div class="table-responsive mt-20">
+        <table class="table table-bordered table_ost">
           <thead>
             <tr>
               <td class="text-start">{{ column_name }}</td>
@@ -69,7 +71,19 @@
                 <td class="text-end">{{ product.quantity }}</td>
                 <td class="text-end">{{ product.price }}</td>
                 <td class="text-end">{{ product.total }}</td>
-                <td class="text-end" style="white-space: nowrap;">{% if product.reorder %} <a href="{{ product.reorder }}" data-bs-toggle="tooltip" title="{{ button_reorder }}" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a> {% endif %} <a href="{{ product.return }}" data-bs-toggle="tooltip" title="{{ button_return }}" class="btn btn-danger"><i class="fa-solid fa-reply"></i></a></td>
+                <td class="text-end" style="white-space: nowrap;">{% if product.reorder %} 
+                  <a href="{{ product.reorder }}" data-bs-toggle="tooltip" {#title="{{ button_reorder }}"#} class="btn btn_ost btn_ost_grey">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" class="bi bi-bag d-inline-block stroke-none" viewBox="0 0 16 16">
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg>
+                  </a> {% endif %} 
+                  {# Кнопка для повернення товару
+                  <a href="{{ product.return }}" data-bs-toggle="tooltip" title="{{ button_return }}" class="btn btn_ost btn_ost_grey">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6 d-inline-block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                    </svg>
+                  </a> #}
+                </td>
               </tr>
             {% endfor %}
             {% for voucher in vouchers %}
@@ -88,8 +102,8 @@
             {% for total in totals %}
               <tr>
                 <td colspan="3"></td>
-                <td class="text-end"><b>{{ total.title }}</b></td>
-                <td class="text-end">{{ total.text }}</td>
+                <td class="text-end">{{ total.title }}</td>
+                <td class="text-end"><b>{{ total.text }}</b></td>
                 {% if products %}
                   <td></td>
                 {% endif %} </tr>
@@ -98,7 +112,7 @@
         </table>
       </div>
       {% if comment %}
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table_ost">
           <thead>
             <tr>
               <td class="text-start">{{ text_comment }}</td>
@@ -112,8 +126,9 @@
         </table>
       {% endif %}
       {% if histories %}
+        <br>
         <h3>{{ text_history }}</h3>
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table_ost">
           <thead>
             <tr>
               <td class="text-start">{{ column_date_added }}</td>
@@ -138,8 +153,8 @@
           </tbody>
         </table>
       {% endif %}
-      <div class="d-inline-block pt-2 pd-2 w-100">
-        <div class="float-end"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+      <div class="d-inline-block pt-2 pd-2 w-100 mt-20">
+        <div class="float-end"><a href="{{ continue }}" class="btn btn_ost btn_ost_grey">{{ button_continue }}</a></div>
       </div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>

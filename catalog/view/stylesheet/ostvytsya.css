@@ -518,6 +518,8 @@ header{
   }
 
 /* --------------------  SHORTS  ---------------------  */
+.w16 { width:16px; }
+.h16 { height:16px; }
 .w40 { width:40px; }
 .w50 { width:50px; }
 .w60 { width:60px; }

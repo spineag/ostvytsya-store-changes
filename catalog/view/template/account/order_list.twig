@@ -1,16 +1,18 @@
 {{ header }}
 <div id="account-order" class="container">
-  <ul class="breadcrumb">
+  {# <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
-  </ul>
-  <div class="row">{{ column_left }}
+  </ul> #}
+  <div class="row mt-60">
+    {{ column_left }}
     <div id="content" class="col">{{ content_top }}
-      <h1>{{ heading_title }}</h1>
+      <h2>{{ heading_title }}</h2>
+      <br><br>
       {% if orders %}
         <div class="table-responsive">
-          <table class="table table-bordered table-hover">
+          <table class="table table-bordered table_ost">
             <thead>
               <tr>
                 <td class="text-end">{{ column_order_id }}</td>
@@ -31,21 +33,27 @@
                   <td class="text-start">{{ order.status }}</td>
                   <td class="text-end">{{ order.total }}</td>
                   <td class="text-start">{{ order.date_added }}</td>
-                  <td class="text-end"><a href="{{ order.view }}" data-bs-toggle="tooltip" title="{{ button_view }}" class="btn btn-info"><i class="fa-solid fa-eye"></i></a></td>
+                  <td class="text-end"><a href="{{ order.view }}" data-bs-toggle="tooltip" {#title="{{ button_view }}"#} class="btn btn_ost btn_ost_grey">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="inherit" class="w-6 h-6 d-inline-block">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </a></td>
                 </tr>
               {% endfor %}
             </tbody>
           </table>
         </div>
-        <div class="row">
+
+        <div class="row mt-20">
           <div class="col-sm-6 text-start">{{ pagination }}</div>
           <div class="col-sm-6 text-end">{{ results }}</div>
         </div>
       {% else %}
         <p>{{ text_no_results }}</p>
       {% endif %}
-      <div class="d-inline-block pt-2 pd-2 w-100">
-        <div class="float-end"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+      <div class="d-inline-block pt-2 pd-2 w-100 mt-20">
+        <div class="float-end"><a href="{{ continue }}" class="btn btn_ost btn_ost_grey">{{ button_continue }}</a></div>
       </div>
       {{ content_bottom }}</div>
     {{ column_right }}</div>
