@@ -553,3 +553,31 @@ header{
 .be4 { border: 1px solid #e4e4e4; }
 .stroke-none {stroke: none;}
 
+
+/* --------------------  MOBILE ADAPTIVE  ---------------------  */
+
+.mobile-left-menu-cell{
+  background-color: #22222255;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  bottom:0;
+  display: block;
+}
+.mobile-left-menu-cont{
+  background-color: white;
+  width:80vw;
+  height: 100vh;
+}
+@media screen and (min-width: 992px) {
+  .mobile-left-menu-cell{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .left-side-cell{
+    display: none;
+  }
+}
