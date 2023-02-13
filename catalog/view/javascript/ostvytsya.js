@@ -5,8 +5,8 @@ function onWindowResize(){
         $('.left-side').width(w);
         w = $('.header-cell').width();
         $('header').width(w);
-    // } else{
-    //     $('header').css('width', '100%');
+    } else{
+        $('header').css('width', '100%');
     }
 }
 window.onresize = onWindowResize;
