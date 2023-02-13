@@ -1,11 +1,12 @@
 function onWindowResize(){
-    let wWindow = $(window).width();
-    let w;
-    if (wWindow>=1000){
+    let w, wWindow = $(window).width();
+    if (wWindow>=992){
         w = $('.left-side-cell').width();
         $('.left-side').width(w);
         w = $('.header-cell').width();
         $('header').width(w);
+    } else{
+        $('header').width('100%');
     }
 }
 window.onresize = onWindowResize;0

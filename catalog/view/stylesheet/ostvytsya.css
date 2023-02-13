@@ -554,7 +554,7 @@ header{
 .stroke-none {stroke: none;}
 
 
-/* --------------------  MOBILE ADAPTIVE  ---------------------  */
+/* --------------------  ADAPTIVE  ---------------------  */
 
 .mobile-left-menu-cell{
   background-color: #22222255;
@@ -570,7 +570,7 @@ header{
   width:80vw;
   height: 100vh;
 }
-@media screen and (min-width: 992px) { /* web */
+@media (min-width: 992px) { /* web */
   .mobile-left-menu-cell{
 
   }
@@ -579,7 +579,10 @@ header{
   }
 }
 
-@media screen and (max-width: 991px) { /* tablet + mobile */
+@media (max-width: 991px) { /* tablet + mobile */
+  header{
+    padding: 0 20px;
+  }
   .left-side-cell{
     display: none;
   }
@@ -591,5 +594,15 @@ header{
     grid-template-columns: auto;
     grid-template-areas: "header-cell" "content-cell" "footer-cell";
   }
+  .content-cell{
+    padding: 0 20px;
+  }
 }
 
+@media (max-width: 768px) { /*  mobile */
+
+}
+
+@media (max-width: 576px) { /*  small mobile */
+
+}
