@@ -52,7 +52,10 @@ h3 { font-size: 18px; }
   text-align: left;
 }
   /*  -------------------     HEADER      ---------------------  */
-  #logo { margin: 0; }
+header{
+  width: calc(100% - 250px);
+}
+#logo { margin: 0; }
 .header-cell {
   grid-area: header-cell;
 }
@@ -581,6 +584,7 @@ header{
 
 @media (max-width: 991px) { /* tablet + mobile */
   header{
+    width: 100%;
     padding: 0 20px;
   }
   .left-side-cell{
