@@ -577,15 +577,15 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  height: 60px;
-  margin-bottom: 40px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 
 @media (max-width:1439px){
   header{
     padding: 0 30px;
-    border-bottom: 1px solid #E4E4E4;
   }
   .content-cell{
     padding: 0 30px 0 0;
@@ -613,7 +613,7 @@ header{
     grid-template-areas: "header-cell" "content-cell" "footer-cell";
   }
   #logo_small img {
-    max-width: 60px;
+    max-width: 100px;
   }
   .header_tablet_icon svg{
     width: 24px;
@@ -622,7 +622,7 @@ header{
     fill: #222222;
   }
   .column-left_ost a{
-    font-size: 20x;
+    font-size: 20px;
     margin-right: 0;
     padding: 30px 0 0 30px;
   }
