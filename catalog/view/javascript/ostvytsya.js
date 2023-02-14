@@ -12,6 +12,18 @@ function onWindowResize(){
 window.onresize = onWindowResize;
 $( document ).ready( onWindowResize );
 
+$('.hamburger_menu').click(e=>{
+    $('.mobile-left-menu-cell').show();
+});
+$('.mobile-left-menu-cell').click(e=>{
+    $('.mobile-left-menu-cell').hide();
+});
+$('.mobile-left-menu-cont').click(e=>{
+    e.stopPropagation();
+    e.preventDefault();
+});
+
+
 /* SEARCH PART */
 $('.box-search_ost button.btn-search_ost').click(function(e){ // also was commented "Search" part in common.js
     if ($(this).parent().hasClass('search_focus')){

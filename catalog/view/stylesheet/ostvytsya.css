@@ -62,7 +62,7 @@ header{
   border-bottom: 1px solid #E4E4E4;
 }
 /* .list-inline-item:not(:last-child){ margin-right: 20px;} */
-.list-inline-item:not(:last-child){ 
+.list-inline-item{ 
   margin-left: 20px;
   margin-right: 0;
 }
@@ -568,7 +568,7 @@ header{
 }
 .mobile-left-menu-cont{
   background-color: white;
-  width:80vw;
+  width: 80vw;
   height: 100vh;
 }
 
@@ -582,7 +582,7 @@ header{
 
   }
   .hidden_onweb_ost{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -591,10 +591,10 @@ header{
     padding: 0 30px;
   }
   .left-side-cell{
-    display: none;
+    display: none !important;
   }
   .hidden_ontablet_ost{
-    display: none;
+    display: none !important;
   }
   .page {
     grid-template-rows: 60px auto 160px;  
