@@ -12,7 +12,7 @@ function onWindowResize(){
 window.onresize = onWindowResize;
 $( document ).ready( onWindowResize );
 
-$('.hamburger_menu').click(e=>{
+$('#hamburger_menu').click(e=>{
     $('.mobile-left-menu-cell').show();
 });
 $('.mobile-left-menu-cell').click(e=>{
