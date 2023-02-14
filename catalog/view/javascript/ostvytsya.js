@@ -18,6 +18,9 @@ $('#hamburger_menu').click(e=>{
 $('.mobile-left-menu-cell').click(e=>{
     $('.mobile-left-menu-cell').hide();
 });
+// $('#hamburger_close').click(e=>{
+//     $('.mobile-left-menu-cell').hide();
+// });
 $('.mobile-left-menu-cont').click(e=>{
     e.stopPropagation();
     e.preventDefault();
