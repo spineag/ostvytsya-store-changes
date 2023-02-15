@@ -4,7 +4,8 @@ function onWindowResize(){
         w = $('.left-side-cell').width();
         $('.left-side').width(w);
         w = $('.header-cell').width();
-        $('header').width(w);
+        $('header').width(w - 30*2);
+        $('.mobile-left-menu-cell').hide();
     } else{
         $('header').css('width', '100%');
     }
@@ -22,8 +23,9 @@ $('.mobile-left-menu-cell').click(e=>{
 //     $('.mobile-left-menu-cell').hide();
 // });
 $('.mobile-left-menu-cont').click(e=>{
-    e.stopPropagation();
-    e.preventDefault();
+    console.log(e)
+    // e.stopPropagation();
+    // e.preventDefault();
 });
 
 
