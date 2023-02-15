@@ -23,9 +23,10 @@ $('.mobile-left-menu-cell').click(e=>{
 //     $('.mobile-left-menu-cell').hide();
 // });
 $('.mobile-left-menu-cont').click(e=>{
-    console.log(e)
-    // e.stopPropagation();
-    // e.preventDefault();
+    if (e.currentTarget.hasClass('mobile-left-menu-cont')){
+        e.stopPropagation();
+        e.preventDefault();
+    }
 });
 
 
