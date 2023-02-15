@@ -23,8 +23,7 @@ $('.mobile-left-menu-cell').click(e=>{
 //     $('.mobile-left-menu-cell').hide();
 // });
 $('.mobile-left-menu-cont').click(e=>{
-    console.log(e)
-    if (e.currentTarget.classList.contains('mobile-left-menu-cont')){
+    if (e.target.classList.contains('mobile-left-menu-cont')){
         e.stopPropagation();
         e.preventDefault();
     }
