@@ -10,7 +10,7 @@ function onWindowResize(){
     } else{
         $('header').css('width', '100%');
     }
-    if (wWindow>1439)
+    // if (wWindow>1439)
 
 }
 window.onresize = onWindowResize;
