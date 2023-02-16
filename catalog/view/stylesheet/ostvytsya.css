@@ -261,6 +261,7 @@ header{
     color: white;
     border: none;
   }
+  .product-thumb_ost .bottom_part_right .price_web_hidden{ display: none; }
 
   /* price */
   .price-old_ost{
@@ -674,4 +675,25 @@ header{
   .product-thumb_ost{
     width: 70vw;
   }
+  .grid-cell_ost .bottom_part{
+    display: block;
+  }
+  .grid-cell_ost .bottom_part .bottom_part_left{
+    display: hidden;
+  }
+  .grid-cell_ost .bottom_part .bottom_part_right .price_web_hidden{
+    display: inline;
+  }
+  .grid-cell_ost .bottom_part .bottom_part_right .svg{
+    margin-right: 10px;
+  }
+  /* .product-thumb_ost .bottom_part_right .div_like-small-button{
+    background: white;
+    border: none;
+    margin: 0 5px;
+  } */
+  .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
+    width: auto;
+  }
+
 }
