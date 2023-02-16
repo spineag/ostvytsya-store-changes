@@ -668,6 +668,7 @@ header{
   .grid-container_ost{
     display: flex;
     overflow-y: auto;
+    gap: 30px;
   }
   .grid-cell_ost{
     display: inline-block;
@@ -696,8 +697,8 @@ header{
     height: 40px;
     border-radius: 20px;
     font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 0 10px;
+    font-weight: 600;
+    margin: 0 10px 0 20px;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
     width: 100%;
