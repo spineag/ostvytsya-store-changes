@@ -590,7 +590,7 @@ header{
     padding: 0 30px 0 0;
   }
 }
-@media (max-width: 1100px) { 
+@media (max-width: 1200px) { 
   .grid-container_ost{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -643,9 +643,16 @@ header{
   }
 }
 
-@media (max-width: 768px) { /*  mobile */
+@media (max-width: 900px) { /*  mobile */
   .grid-container_ost{
     grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  }
+}
+
+@media (max-width: 768px) { /*  mobile */
+  .grid-container_ost{
+    grid-template-columns: repeat(2, 1fr);
     gap:20px;
   }
 }

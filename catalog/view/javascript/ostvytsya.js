@@ -1,3 +1,4 @@
+let gridContainersOst=[];
 function onWindowResize(){
     let w, wWindow = $(window).width();
     if (wWindow>=992){
@@ -9,9 +10,15 @@ function onWindowResize(){
     } else{
         $('header').css('width', '100%');
     }
+    if (wWindow>1439)
+
 }
 window.onresize = onWindowResize;
-$( document ).ready( onWindowResize );
+$( document ).ready(()=>{
+    gridContainersOst = $('.content-cell .grid-container_ost').toArray();
+    console.log('gridContainersOst:',gridContainersOst);
+    onWindowResize();
+});
 
 /*   mobile menu   */
 $('#hamburger_menu').click(e=>{
