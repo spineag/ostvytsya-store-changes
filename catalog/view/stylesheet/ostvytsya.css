@@ -590,6 +590,11 @@ header{
     padding: 0 30px 0 0;
   }
 }
+@media (max-width: 1100px) { 
+  .grid-container_ost{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (min-width: 992px) { /* web */
   .mobile-left-menu-cell{
 
@@ -632,6 +637,10 @@ header{
   .content-cell{
     padding: 0 30px;
   }
+  .grid-container_ost{
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+  }
 }
 
 @media (max-width: 768px) { /*  mobile */
@@ -645,7 +654,11 @@ header{
   header{
     padding: 0 20px;
   }
+  #logo_small img {
+    max-width: 60px;
+  }
   .grid-container_ost{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap:20px;
   }
 }

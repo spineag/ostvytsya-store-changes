@@ -13,15 +13,15 @@ function onWindowResize(){
 window.onresize = onWindowResize;
 $( document ).ready( onWindowResize );
 
+/*   mobile menu   */
 $('#hamburger_menu').click(e=>{
     $('.mobile-left-menu-cell').show();
+    $('main').addClass('overflow-hidden');
 });
 $('.mobile-left-menu-cell').click(e=>{
     $('.mobile-left-menu-cell').hide();
+    $('main').removeClass('overflow-hidden');
 });
-// $('#hamburger_close').click(e=>{
-//     $('.mobile-left-menu-cell').hide();
-// });
 $('.mobile-left-menu-cont').click(e=>{
     if (e.target.classList.contains('mobile-left-menu-cont')){
         e.stopPropagation();
@@ -30,7 +30,7 @@ $('.mobile-left-menu-cont').click(e=>{
 });
 
 
-/* SEARCH PART */
+/*   SEARCH PART   */
 $('.box-search_ost button.btn-search_ost').click(function(e){ // also was commented "Search" part in common.js
     if ($(this).parent().hasClass('search_focus')){
         let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).attr('data-lang');
