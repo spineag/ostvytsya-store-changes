@@ -16,11 +16,16 @@ $( document ).ready(()=>{
     let url = window.location.search;
     console.log('url: ', url);
     if (url.includes('product/search') || url.includes('account/wishlist') || url.includes('checkout/')){
+        console.log(1);
         $('#hamburger_menu').addClass('d-none');
         $('#hamburger_menu').parent().find('.logo_small').removeClass('d-none');
     } else if (url.includes('account/')){
+        console.log(2);
         $('.mobile-left-menu-cont .account_left_menu').removeClass('d-none');
-    } else $('.mobile-left-menu-cont .common_left_menu').removeClass('d-none');
+    } else {
+        console.log(3);
+        $('.mobile-left-menu-cont .common_left_menu').removeClass('d-none');
+    }
 
     gridContainersOst = $('.content-cell .grid-container_ost').toArray();
     onWindowResize();
