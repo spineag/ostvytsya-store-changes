@@ -13,8 +13,8 @@ function onWindowResize(){
 }
 window.onresize = onWindowResize;
 $( document ).ready(()=>{
-    let url = window.location.pathname;
-    console.log('url: ', url);
+    let url = window.location.href;
+    console.log('url: ', window.location.href);
     if (url.includes('product/search') || url.includes('account/wishlist') || url.includes('checkout/')){
         $('#hamburger_menu').addClass('d-none');
         $('#hamburger_menu').parent().find('.logo_small').removeClass('d-none');
