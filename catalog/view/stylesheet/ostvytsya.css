@@ -60,6 +60,7 @@ header{
   height:60px;
   background-color: white;
   border-bottom: 1px solid #E4E4E4;
+  padding: 0;
 }
 /* .list-inline-item:not(:last-child){ margin-right: 20px;} */
 .list-inline-item{ 
@@ -617,7 +618,7 @@ header{
     grid-template-columns: auto;
     grid-template-areas: "header-cell" "content-cell" "footer-cell";
   }
-  #logo_small img {
+  .logo_small img {
     max-width: 100px;
   }
   .header_tablet_icon svg{
@@ -662,8 +663,14 @@ header{
   header{
     padding: 0 20px;
   }
-  #logo_small img {
-    max-width: 60px;
+  .mobile-left-menu-top{
+    height: 80px;
+  }
+  .logo_small img {
+    max-width: 80px;
+  }
+  .list-inline-item{
+    margin-left: 30px;
   }
   .grid-container_ost{
     display: flex;

@@ -10,24 +10,29 @@ function onWindowResize(){
     } else{
         $('header').css('width', '100%');
     }
-    // if (wWindow>1439)
-
 }
 window.onresize = onWindowResize;
 $( document ).ready(()=>{
+    let url = window.location.pathname;
+    if (url.includes('product/search') || url.includes('account/wishlist') || url.includes('checkout/')){
+        $('#hamburger_menu').addClass('d-none');
+        $('#hamburger_menu').parent().find('.logo_small').removeClass('d-none');
+    } else if (url.includes('account/')){
+        $('.mobile-left-menu-cont .account_left_menu').removeClass('d-none');
+    } else $('.mobile-left-menu-cont .common_left_menu').removeClass('d-none');
+
     gridContainersOst = $('.content-cell .grid-container_ost').toArray();
-    console.log('gridContainersOst:',gridContainersOst);
     onWindowResize();
 });
 
 /*   mobile menu   */
 $('#hamburger_menu').click(e=>{
     $('.mobile-left-menu-cell').show();
-    $('main').addClass('overflow-hidden');
+    $('body').addClass('overflow-hidden');
 });
 $('.mobile-left-menu-cell').click(e=>{
     $('.mobile-left-menu-cell').hide();
-    $('main').removeClass('overflow-hidden');
+    $('body').removeClass('overflow-hidden');
 });
 $('.mobile-left-menu-cont').click(e=>{
     if (e.target.classList.contains('mobile-left-menu-cont')){
