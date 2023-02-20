@@ -15,7 +15,7 @@ window.onresize = onWindowResize;
 $( document ).ready(()=>{
     let url = window.location.search;
     console.log('url: ', url);
-    if (url.includes('product/search') || url.includes('account/wishlist') || url.includes('checkout/')){
+    if (url.includes('product/search') || url.includes('checkout/')){
         console.log(1);
         $('#hamburger_menu').addClass('d-none');
         $('#hamburger_menu').parent().find('.logo_small').removeClass('d-none');
