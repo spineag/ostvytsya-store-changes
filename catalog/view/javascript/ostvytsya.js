@@ -52,7 +52,7 @@ $('.mobile-left-menu-cont').click(e=>{
 
 /*   SEARCH PART   */
 $('.box-search_ost button.btn-search_ost').click(function(e){ // also was commented "Search" part in common.js
-    if ($(this).parent().hasClass('search_focus')){
+    if ($(this).parent().hasClass('search_focus') || $(window).width()<992){
         let url = $('base').attr('href') + 'index.php?route=product/search&language=' + $(this).attr('data-lang');
         let value = $(this).parent().find('.input-search_ost').val();
         if (value) url += '&search=' + encodeURIComponent(value);
