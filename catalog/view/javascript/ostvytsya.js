@@ -5,7 +5,8 @@ function onWindowResize(){
         w = $('.left-side-cell').width();
         $('.left-side').width(w);
         w = $('.header-cell').width();
-        $('header').width(w - 30*2);
+        if (wWindow > 1439) $('header').width(w);
+            else $('header').width(w - 30*2);
         $('.mobile-left-menu-cell').hide();
     } else{
         $('header').css('width', '100%');
