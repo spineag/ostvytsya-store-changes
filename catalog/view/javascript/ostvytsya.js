@@ -21,7 +21,7 @@ $( document ).ready(()=>{
         $('#hamburger_menu').addClass('d-none');
         $('#hamburger_menu').parent().find('.logo_small').removeClass('d-none');
         if (url.includes('product/search'))
-            $('#hamburger_menu').parent().find('.logo_small').addClass('mw60');
+            $('#hamburger_menu').parent().find('.logo_small img').addClass('mw60');
     } else if (url.includes('account/')){
         console.log(2);
         $('.mobile-left-menu-cont .account_left_menu').removeClass('d-none');
