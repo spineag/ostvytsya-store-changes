@@ -22,6 +22,7 @@ $( document ).ready(()=>{
     } else if (url.includes('account/')){
         console.log(2);
         $('.mobile-left-menu-cont .account_left_menu').removeClass('d-none');
+        $('.left-side-cell #left_menu #column-left').addClass('d-none');
     } else {
         console.log(3);
         $('.mobile-left-menu-cont .common_left_menu').removeClass('d-none');
