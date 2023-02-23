@@ -7,7 +7,7 @@
           <td class="position-relative">
             <span class="text-start inner_a title_part"> <a href="{{ product.href }}">{{ product.name }} ({{ product.model }})</a> </span>
             <div class="bottom_part position-absolute bottom-0 end-0">
-              <div class="bottom_part_left text-end me-4"> 
+              <div class="bottom_part_left text-end me-2 me-md-3 me-lg-4"> 
                 {% if product.price %}
                   <div class="price d-flex flex-column">
                     {% if not product.special %}
@@ -20,7 +20,7 @@
                 {% endif %}
               </div>
               <div class="bottom_part_right">
-                <form method="post" data-oc-toggle="ajax" data-oc-load="{{ wishlist }}" data-oc-target="#wishlist" class="d-flex m-4" {#title="{{ button_remove }}"#}>
+                <form method="post" data-oc-toggle="ajax" data-oc-load="{{ wishlist }}" data-oc-target="#wishlist" class="d-flex m-2 m-md-3 m-lg-4" {#title="{{ button_remove }}"#}>
                   <input type="hidden" name="product_id" value="{{ product.product_id }}"/> <input type="hidden" name="quantity" value="{{ product.minimum }}"/>
                   <button type="submit" {formaction="{{ remove }}" data-bs-toggle="tooltip" class="div_like-small-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="inherit" viewBox="0 0 16 16">
