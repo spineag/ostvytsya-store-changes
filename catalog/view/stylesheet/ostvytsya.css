@@ -270,7 +270,7 @@ header{
   }
   .wish-thumb_ost .title_part a{
     color: #222222;
-    text-align: 1.3;
+    line-height: 1.3;
   }
   .wish-thumb_ost .image_part{
     max-width: 200px;
