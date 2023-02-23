@@ -296,7 +296,7 @@ header{
   .wish-thumb_ost .bottom_part_right .div_like-small-button{
     background: white;
     border: none;
-    margin: 0 5px;
+    margin-right:20px;
   }
   .wish-thumb_ost .bottom_part_right .div_like-small-button:last-child{
     border: 1px solid #222222;
@@ -764,4 +764,5 @@ header{
   .wish-thumb_ost .image_part img { max-width:150px;}
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 12px; }
   .wish-thumb_ost .bottom_part_left .price-new_ost{ font-size: 16px; }
+  .wish-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 80px; }
 }
