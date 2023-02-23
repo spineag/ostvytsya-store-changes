@@ -1,16 +1,6 @@
 <div class="table-responsive">
   <table class="table table-bordered table_ost">
-    {# <thead>
-      <tr>
-        <td class="text-center">{{ column_image }}</td>
-        <td class="text-start">{{ column_name }}</td>
-        <td class="text-start">{{ column_model }}</td>
-        <td class="text-start">{{ column_quantity }}</td>
-        <td class="text-end">{{ column_price }}</td>
-        <td class="text-end">{{ column_total }}</td>
-      </tr>
-    </thead> #}
-    <tbody>
+    <tbody class="hidden_ontablet_ost">
       {% for product in products %}
         <tr class="checkout-thumb_ost">
           <td class="text-center image_part">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="small_image_ost"/></a> {% endif %}</td>
@@ -62,28 +52,14 @@
           <td class="text-end">{{ product.total }}</td>
         </tr>
       {% endfor %}
-      {# {% for voucher in vouchers %}
-        <tr>
-          <td></td>
-          <td class="text-start text-wrap">{{ voucher.description }}</td>
-          <td class="text-start"></td>
-          <td class="text-start">
-            <form method="post" data-oc-target="#shopping-cart">
-              <div class="input-group">
-                <input type="text" name="quantity" value="1" size="1" class="form-control" disabled/>
-                <button type="submit" formaction="{{ voucher_remove }}" data-bs-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa-solid fa-circle-xmark"></i></button>
-              </div>
-              <input type="hidden" name="key" value="{{ voucher.key }}"/>
-            </form>
-          </td>
-          <td class="text-end">{{ voucher.amount }}</td>
-          <td class="text-end">{{ voucher.amount }}</td>
-        </tr>
-      {% endfor %} #}
     </tbody>
     <tfoot id="checkout-total">
       {% for total in totals %}
-        <tr>
+        <tr class="hidden_ontablet_ost">
+          <td colspan="3" class="text-end"> {{ total.title }} </td>
+          <td class="text-end"><b>{{ total.text }}</b></td>
+        </tr>
+        <tr class="hidden_onweb_ost">
           <td colspan="3" class="text-end"> {{ total.title }} </td>
           <td class="text-end"><b>{{ total.text }}</b></td>
         </tr>
