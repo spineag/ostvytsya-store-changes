@@ -108,6 +108,7 @@ class WishList extends \Opencart\System\Engine\Controller {
 					'stock'      => $stock,
 					'price'      => $price,
 					'special'    => $special,
+					'quantity'   => $product_info['quantity'],
 					'minimum'    => $product_info['minimum'] > 0 ? $product_info['minimum'] : 1,
 					'href'       => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_info['product_id'])
 				];
