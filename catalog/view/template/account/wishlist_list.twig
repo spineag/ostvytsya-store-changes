@@ -6,7 +6,7 @@
           <td class="text-center image_part">{% if product.thumb %}<a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="small_image_ost"/></a>{% endif %}</td>
           <td class="position-relative">
             <span class="text-start inner_a title_part"> <a href="{{ product.href }}">{{ product.name }} ({{ product.model }})</a> </span>
-            <div class="bottom_part position-absolute bottom-0 end-0">
+            <div class="bottom_part">
               <div class="bottom_part_left text-end me-2 me-md-3 me-lg-4"> 
                 {% if product.price %}
                   <div class="price d-flex flex-column">
@@ -20,18 +20,20 @@
                 {% endif %}
               </div>
               <div class="bottom_part_right">
-                <form method="post" data-oc-toggle="ajax" data-oc-load="{{ wishlist }}" data-oc-target="#wishlist" class="d-flex m-2 m-md-3 m-lg-4" {#title="{{ button_remove }}"#}>
-                  <input type="hidden" name="product_id" value="{{ product.product_id }}"/> <input type="hidden" name="quantity" value="{{ product.minimum }}"/>
-                  <button type="submit" {formaction="{{ remove }}" data-bs-toggle="tooltip" class="div_like-small-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="inherit" viewBox="0 0 16 16">
-                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </button>
-                  <button type="submit" formaction="{{ add_to_cart }}" data-bs-toggle="tooltip" class="div_like-small-button" {#title="{{ button_cart }}"#}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" viewBox="0 0 16 16">
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                    </svg>
-                  </button>
+                <form method="post" data-oc-toggle="ajax" data-oc-load="{{ wishlist }}" data-oc-target="#wishlist" class="d-flex m-2 m-md-3 m-lg-4 w-100" {#title="{{ button_remove }}"#}>
+                  <div class="bottom_part_right w-100">
+                    <input type="hidden" name="product_id" value="{{ product.product_id }}"/> <input type="hidden" name="quantity" value="{{ product.minimum }}"/>
+                    <button type="submit" {formaction="{{ remove }}" data-bs-toggle="tooltip" class="div_like-small-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="inherit" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </button>
+                    <button type="submit" formaction="{{ add_to_cart }}" data-bs-toggle="tooltip" class="div_like-small-button" {#title="{{ button_cart }}"#}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="inherit" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                      </svg>
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>

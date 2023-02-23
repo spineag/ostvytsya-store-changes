@@ -275,10 +275,23 @@ header{
   .wish-thumb_ost .image_part{
     max-width: 200px;
   }
+  .wish-thumb_ost .bottom_part{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+  }
+  .wish-thumb_ost .bottom_part .inner_form{
+    width: 100%;
+  }
+
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 14px; }
   .wish-thumb_ost .bottom_part_left .price-new_ost{ font-size: 20px; }
   .wish-thumb_ost .bottom_part_right{
     display: flex;
+    justify-content: end;
   }
   .wish-thumb_ost .bottom_part_right .div_like-small-button{
     background: white;
