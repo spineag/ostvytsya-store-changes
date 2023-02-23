@@ -316,14 +316,14 @@ header{
   }
   .checkout-thumb_ost .image_part{ width: 200px; }
   .checkout-thumb_ost .checkout_change_count{
-    border: 1px solid #222222;
+    border: 1px solid #e4e4e4;
     border-radius: 25px;
     padding: 5px;
   }
-  .checkout-thumb_ost .bottom_part_right .div_like-small-button{
+  .checkout-thumb_ost .div_like-small-button{
     background: white;
     border: none;
-    margin-right:20px;
+    margin: 0 20px;
   }
   /* .checkout-thumb_ost .bottom_part{
     width: 100%;

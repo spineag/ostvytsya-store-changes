@@ -30,7 +30,7 @@
               <small>{{ text_subscription }}: {{ product.subscription }}</small>
             {% endif %}
           </td>
-          <td class="text-start">{{ product.model }}</td>
+          {# <td class="text-start">{{ product.model }}</td> #}
           <td class="text-start">
             <form method="post" data-oc-target="#shopping-cart">
               <div class="d-flex justify-content-around align-items-center">
@@ -84,7 +84,7 @@
     <tfoot id="checkout-total">
       {% for total in totals %}
         <tr>
-          <td colspan="4" class="text-end"> {{ total.title }} </td>
+          <td colspan="43" class="text-end"> {{ total.title }} </td>
           <td class="text-end"><b>{{ total.text }}</b></td>
         </tr>
       {% endfor %}
