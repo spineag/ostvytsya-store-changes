@@ -271,9 +271,7 @@ header{
     color: #222222;
     line-height: 1.3;
   }
-  .wish-thumb_ost .image_part{
-    max-width: 200px;
-  }
+  .wish-thumb_ost .image_part{ width: 200px; }
   .wish-thumb_ost .bottom_part{
     width: 100%;
     position:absolute;
@@ -766,7 +764,7 @@ header{
   .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button:last-child svg{
     margin-left: 10px;
   }
-  .wish-thumb_ost .image_part img { max-width:150px;}
+  .wish-thumb_ost .image_part { width:150px;}
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 12px; }
   .wish-thumb_ost .bottom_part_left .price-new_ost{ font-size: 16px; }
   .wish-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 80px; }
