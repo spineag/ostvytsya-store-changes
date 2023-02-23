@@ -283,9 +283,9 @@ header{
   } */
   .wish-thumb_ost .title_part{ }
   .wish-thumb_ost .bottom_part{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     color: #222222;
     padding: 10px 0;
   }
