@@ -62,7 +62,10 @@ header{
   border-bottom: 1px solid #E4E4E4;
   padding: 0;
 }
-.list-inline-item { margin-right: 0 !important; }
+.list-inline-item { 
+  margin-right: 0 !important; 
+  margin-left: 20px;
+}
 .div_like-small-button{
   width:30px;
   height:30px;
