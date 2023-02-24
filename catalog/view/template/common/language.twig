@@ -24,7 +24,7 @@
   <div class="hidden_onweb_ost">  
     {% for language in languages %}  
       {% if language.code != code %}  {# it's kostyl' for only if we have 2 languages!!! #}
-        <a href="{{ language.href }}" class="dropdown-item"> {{ language.name }} </a>
+        <a href="{{ language.href }}" class="dropdown-item px-1"> {{ language.name }} </a>
       {% endif %}
     {% endfor %} 
   </div>

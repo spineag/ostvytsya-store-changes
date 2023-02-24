@@ -760,41 +760,21 @@ header{
 }
 
 @media (max-width: 576px) { /*  small mobile */
-  header{
-    padding: 0 20px;
-  }
-  .mobile-left-menu-top{
-    height: 80px;
-  }
-  .logo_small img {
-    max-width: 60px;
-  }
-  .list-inline-item{
-    margin-left: 20px;
-  }
+  header{ padding: 0 20px; }
+  .mobile-left-menu-top{ height: 80px; }
+  .logo_small img { max-width: 60px; }
+  .list-inline-item{ margin-left: 20px; }
   .grid-container_ost{
     display: flex;
     overflow-y: auto;
     gap: 30px;
   }
-  .grid-cell_ost{
-    display: inline-block;
-  }
-  .product-thumb_ost{
-    width: 70vw;
-  }
-  .product-thumb_ost .title_part{
-    font-size: 18px;
-  }
-  .grid-cell_ost .bottom_part{
-    display: block;
-  }
-  .grid-cell_ost .bottom_part .bottom_part_left{
-    display: none;
-  }
-  .grid-cell_ost .bottom_part .bottom_part_right .price_web_hidden{
-    display: inline;
-  }
+  .grid-cell_ost{ display: inline-block; }
+  .product-thumb_ost{ width: 70vw; }
+  .product-thumb_ost .title_part{ font-size: 18px; }
+  .grid-cell_ost .bottom_part{ display: block; }
+  .grid-cell_ost .bottom_part .bottom_part_left{ display: none; }
+  .grid-cell_ost .bottom_part .bottom_part_right .price_web_hidden{ display: inline; }
   .product-thumb_ost .bottom_part_right .div_like-small-button{
     height: 40px;
     border-radius: 20px;
@@ -802,16 +782,12 @@ header{
     font-weight: 600;
     margin: 0 10px 0 20px;
   }
-  .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{
-    width: 100%;
-  }
+  .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 100%; }
   .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button svg{
     width: 20px;
     height: 20px;
   }
-  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button:last-child svg{
-    margin-left: 10px;
-  }
+  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button:last-child svg{ margin-left: 10px; }
   .wish-thumb_ost td{ padding: 5px; }
   .wish-thumb_ost .image_part { width:150px;}
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 12px; }
