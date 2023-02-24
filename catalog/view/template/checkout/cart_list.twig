@@ -97,11 +97,11 @@
     </tbody>
 
      <tfoot id="checkout-total">
-      {% for total in totals %}
+      {# {% for total in totals %} #}
         <tr>
-          <td colspan="2" class="text-end"> {{ total.title }}: <b>{{ total.text }}</b></td>
+          <td colspan="2" class="text-end"> {{ totals[0].title }}: <b>{{ totals[0].text }}</b></td>
         </tr>
-      {% endfor %}
+      {# {% endfor %} #}
     </tfoot>
   </table>
 </div>

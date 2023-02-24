@@ -327,6 +327,8 @@ header{
     bottom: 0;
     right:0;
     display: flex;
+    justify-content: space-around;
+    padding: 10px;
   }
   .checkout-thumb_ost .bottom_part_right{
     display: flex;
