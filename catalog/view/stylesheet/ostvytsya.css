@@ -278,6 +278,8 @@ header{
     right:0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
   }
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 14px; }
   .wish-thumb_ost .bottom_part_left .price-new_ost{ font-size: 20px; }
@@ -329,13 +331,19 @@ header{
   .checkout-thumb_ost .bottom_part_right{
     display: flex;
     justify-content: end;
+    align-items: center;
   }
   .checkout-thumb_ost .bottom_part_right .div_like-small-button:hover{
     background-color: #222222;
     color: white;
     border: none;
+    margin: 0 20px;
   } 
-
+  .checkout-thumb_ost .checkout_inner_form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   
   /* price */
   .price-old_ost{
@@ -800,4 +808,9 @@ header{
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 12px; }
   .wish-thumb_ost .bottom_part_left .price-new_ost{ font-size: 16px; }
   .wish-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 80px; }
+
+  .checkout-thumb_ost .bottom_part{ flex-direction: column; }
+  .checkout-thumb_ost .checkout_inner_form{
+    justify-content: start;
+  }
 }
