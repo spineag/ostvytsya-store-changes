@@ -763,6 +763,7 @@ header{
   header{ padding: 0 20px; }
   .mobile-left-menu-top{ height: 80px; }
   .logo_small img { max-width: 60px; }
+  .small_image_ost{ max-width:150px; }
   .list-inline-item{ margin-left: 20px; }
   .grid-container_ost{
     display: flex;
@@ -798,7 +799,5 @@ header{
   .checkout_bottom_ost > * { width: 100%; }
   .checkout-thumb_ost .bottom_part{ flex-direction: column-reverse; }
   .checkout-thumb_ost .image_part { width:150px;}
-  .checkout-thumb_ost .checkout_inner_form{
-    justify-content: start;
-  }
+  .checkout-thumb_ost .checkout_inner_form{ justify-content: start; }
 }
