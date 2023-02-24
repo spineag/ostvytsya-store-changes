@@ -623,7 +623,7 @@ header{
 .w300 { width:300px; }
 .wContent { width: fit-content; }
 .min-w-auto{ min-width: auto; }
-.mw60 { max-width: 60px; }
+.mw60 { max-width: 60px !important; }
 .mt-20 { margin-top:20px; }
 .mt-40 { margin-top:40px; }
 .mt-60 { margin-top:60px; }
