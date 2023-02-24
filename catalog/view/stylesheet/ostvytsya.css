@@ -812,6 +812,7 @@ header{
   .wish-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 80px; }
 
   .checkout-thumb_ost .bottom_part{ flex-direction: column; }
+  .checkout-thumb_ost .image_part { width:150px;}
   .checkout-thumb_ost .checkout_inner_form{
     justify-content: start;
   }
