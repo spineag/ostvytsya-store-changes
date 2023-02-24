@@ -4,7 +4,7 @@
       {% for product in products %}
         <tr class="checkout-thumb_ost">
           <td class="text-center image_part">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="small_image_ost"/></a> {% endif %}</td>
-          <td class="text-start text-wrap">
+          <td class="text-start text-wrap title_part">
             <a href="{{ product.href }}">{{ product.name }}  ({{ product.model }})</a>
             {% if not product.stock %} <span class="text-danger">***</span>{% endif %}
           </td>
@@ -57,12 +57,12 @@
         <tr class="checkout-thumb_ost">
           <td class="text-center image_part">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="small_image_ost"/></a> {% endif %}</td>
           <td>
-            <div class="text-start text-wrap">
+            <div class="text-start text-wrap title_part">
               <a href="{{ product.href }}">{{ product.name }}  ({{ product.model }})</a>
               {% if not product.stock %} <span class="text-danger">***</span>{% endif %}
             </div>
-            <div>
-              <div class="text-start">
+            <div class="bottom_part">
+              <div class="bottom_part_left">
                 <form method="post" data-oc-target="#shopping-cart">
                   <div class="d-flex justify-content-around align-items-center">
                     <div class="d-flex w-auto checkout_change_count">
@@ -89,7 +89,7 @@
                   </div>
                 </form>
               </div>
-              <div class="text-end">{{ product.total }}</div>
+              <div class="bottom_part_right">{{ product.total }}</div>
             </div>
           </td>
         </tr>
