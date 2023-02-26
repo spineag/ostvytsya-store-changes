@@ -512,6 +512,8 @@ header{
   .btn_ost_noui:active, .btn_ost_noui:focus{
     outline: none;
   }
+  .btn_ost_subtext{ display: inline-block; }
+  .btn_ost_subicon{ display: none; }
 
   .segmented_buttons_ost{
     display: flex;
@@ -764,12 +766,14 @@ header{
 }
 
 @media (max-width: 576px) { /*  small mobile */
+  header{ padding: 0 20px; }
   .row { padding: 0 30px; }
   .alert_ost{
     max-width:90vw; 
     min-width: auto !important;
   }
-  header{ padding: 0 20px; }
+  .btn_ost_subtext{ display: none; }
+  .btn_ost_subicon{ display: inline-block; }
   .mobile-left-menu-top{ height: 80px; }
   .logo_small img { max-width: 60px; }
   .small_image_ost{ max-width:150px; }
@@ -779,11 +783,17 @@ header{
     gap: 60px;
   }
   .grid-cell_ost{ display: inline-block; }
-  .product-thumb_ost{ width: auto; }
-  .product-thumb_ost .title_part{ font-size: 18px; }
-  .grid-cell_ost .bottom_part{ display: block; }
+    .grid-cell_ost .bottom_part{ display: block; }
   .grid-cell_ost .bottom_part .bottom_part_left{ display: none; }
   .grid-cell_ost .bottom_part .bottom_part_right .price_web_hidden{ display: inline; }
+  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button svg{
+    width: 20px;
+    height: 20px;
+  }
+  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button:last-child svg{ margin-left: 10px; }
+
+  .product-thumb_ost{ width: auto; }
+  .product-thumb_ost .title_part{ font-size: 18px; }
   .product-thumb_ost .bottom_part_right .div_like-small-button{
     height: 40px;
     border-radius: 20px;
@@ -792,11 +802,7 @@ header{
     margin: 0 10px 0 20px;
   }
   .product-thumb_ost .bottom_part_right .div_like-small-button:last-child{ width: 100%; }
-  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button svg{
-    width: 20px;
-    height: 20px;
-  }
-  .grid-cell_ost .bottom_part .bottom_part_right .div_like-small-button:last-child svg{ margin-left: 10px; }
+  
   .wish-thumb_ost td{ padding: 5px; }
   .wish-thumb_ost .image_part { width:150px;}
   .wish-thumb_ost .bottom_part_left .price-old_ost{ font-size: 12px; }
